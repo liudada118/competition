@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>江西省教育系统网络安全技能大赛</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.1, maximum-scale=1.0, user-scalable=yes" />
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="./Public/css/base.css" rel="stylesheet" type="text/css" />
+    <link href="./Public/css/plugin.css" rel="stylesheet" type="text/css" />
+    <link href="./Public/active/hfs/css/meeting.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        body {
+            background: #091022 url('../../assets/bg.jpg') no-repeat center 60px;
+        }
+
+        header {
+            overflow: visible;
+        }
+
+        .logo {
+            padding-top: 15px;
+        }
+
+        .top {
+            display: block;
+            margin: 0 auto;
+            overflow: visible;
+        }
+
+        .top-nav {
+            overflow: visible;
+            width: 800px;
+            float: left;
+        }
+
+        .top-nav .info {
+            float: right;
+        }
+
+        .top-nav .info a {
+            font-size: 14px;
+            border-bottom: none;
+        }
+
+        .top-nav .info a:hover {
+            text-decoration: underline;
+        }
+
+        .loginSeting {
+            width: 100px;
+        }
+
+        .meeting-intro {
+            height: 540px;
+        }
+
+        .meeting-intro-con {
+            background: url('https://p0.ssl.qhimg.com/t019a46276567fdf625.png') no-repeat center top;
+            height: 261px;
+        }
+
+        .meeting-intro-con p {
+            font-size: 18px;
+            line-height: 36px;
+        }
+
+        .game-way p {
+            padding-top: 12px;
+            text-indent: 0;
+            font-size: 18px;
+            color: #e2d79d;
+            line-height: 36px;
+        }
+
+        .banner {
+            height: 440px;
+        }
+
+        .game-way-btn {
+            height: 64px;
+            text-align: center;
+            padding: 20px 30px 60px;
+        }
+
+        .game-way-btn a {
+            margin: 0 auto;
+            display: block;
+            width: 421px;
+            height: 64px;
+            line-height: 64px;
+            color: #000;
+            font-size: 32px;
+            font-weight: bold;
+            background: url(https://p0.ssl.qhimg.com/t01b6ad91f48d5c5ef3.png) no-repeat center center;
+        }
+
+        .meeting-schdule-main {
+            height: 657px;
+            background: url(https://p0.ssl.qhimg.com/t017c11d01bd9be0a71.png) no-repeat center 0;
+        }
+
+        .meeting-schdule-main p {
+            font-size: 18px;
+            line-height: 36px;
+            padding: 94px 50px 50px 146px;
+            color: #fff;
+            text-indent: 0;
+        }
+
+        .meeting-time {
+            height: 268px;
+            text-align: center;
+            padding-top: 0;
+            background: none;
+        }
+
+        .meeting-highlights-con {
+            height: 916px;
+            text-align: center;
+            padding-top: 0;
+            background: none;
+        }
+
+        .meeting-partner {
+            width: 1200px;
+            margin: 0 auto;
+            background: url('https://p0.ssl.qhimg.com/t0181b0cb100fbb3503.png') no-repeat center 0;
+        }
+
+        .meeting-partner-con {
+            background: url('https://p0.ssl.qhimg.com/t01bec9a0c5811252a3.png') no-repeat right bottom;
+        }
+
+        .meeting-guide-con {
+            height: 300px;
+        }
+
+        .meeting-guide-else p {
+            text-align: center;
+            height: 47px;
+            color: #fff;
+            font-size: 18px;
+            line-height: 36px;
+        }
+
+        .meeting-guide-else p span {
+            display: inline-block;
+            height: 47px;
+            padding-left: 60px;
+            background: url(https://p0.ssl.qhimg.com/t01bcdf51ccde3c3447.png) no-repeat 0 0;
+        }
+
+        .meeting-guide-wrap {
+            background-position: 0 -180px;
+        }
+
+        footer {
+            height: 100px;
+            padding: 20px 0;
+        }
+
+        .modal-dialog {
+            width: 823px;
+        }
+
+        .modal-dialog:before {
+            content: '';
+            background: #052c39 url(https://p0.ssl.qhimg.com/t01cf073ed85f95de02.png) no-repeat 0 0;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            filter: alpha(opacity=90);
+            -moz-opacity: 0.9;
+            -khtml-opacity: 0.9;
+            opacity: 0.9;
+        }
+
+        .modal-content {
+            background: url(https://p0.ssl.qhimg.com/t0120a92dab96f6ac06.png) no-repeat left bottom;
+        }
+
+        .modal-header {
+            border-bottom: none;
+            background: url(https://p0.ssl.qhimg.com/t01b155862f5905e116.png) no-repeat right 0;
+        }
+
+        .modal-header h4 {
+            color: #fff;
+            padding-left: 96px;
+            font-size: 26px;
+            height: 67px;
+            background: url(https://p0.ssl.qhimg.com/t01b6d1feb4bd495285.png) no-repeat 0 bottom;
+        }
+
+        .modal-header .close {
+            color: #0aecfe;
+            font-size: 30px;
+        }
+
+        .modal-footer {
+            text-align: center;
+            border-top: none;
+            padding: 45px 15px;
+            background: url(https://p0.ssl.qhimg.com/t01859e0cc0c0bdaed5.png) no-repeat right bottom;
+        }
+
+        .modal-body {
+            height: 500px;
+        }
+
+        .agree {
+            width: 660px;
+            height: 418px;
+            overflow: auto;
+            overflow-x: hidden;
+            margin: 0 auto;
+            border: 1px solid #0aecfe;
+            padding: 20px;
+        }
+
+        .agree p {
+            text-indent: 0;
+            font-size: 14px;
+            color: #0aecfe;
+        }
+
+        .agree h3 {
+            text-indent: 0;
+            font-size: 14px;
+            color: #0aecfe;
+            margin-top: 30px;
+        }
+
+        .agreecheckbox {
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            font-size: 14px;
+            color: #0aecfe;
+        }
+
+        .agreecheckbox .fsel {
+            background: url("https://p0.ssl.qhimg.com/t017e45a6f958c9a2bb.png") no-repeat 0 20px;
+        }
+
+        .agreecheckbox .fsel-seled {
+            background: url("https://p0.ssl.qhimg.com/t0111364082fba7b371.png") no-repeat 0 20px;
+        }
+
+        .role p {
+            text-align: center;
+            text-indent: 0;
+            color: #fff;
+            font-size: 18px;
+            padding: 20px 0 50px;
+        }
+
+        .modal-footer .btn-blue {
+            padding: 10px 60px;
+            background: #0aecfe;
+            color: #000;
+            font-size: 18px;
+            border: 1px solid #0aecfe;
+            -o-border-radius: 0px;
+            -moz-border-radius: 0px;
+            -webkit-border-radius: 0px;
+            -ms-border-radius: 0px;
+            border-radius: 0px;
+        }
+
+        .modal-footer .btn-dis {
+            background: #efefef;
+            color: #666;
+            border-color: #efefef;
+        }
+
+        .coloumn-2-wrap-role {
+            width: 450px;
+            margin: 0 auto;
+        }
+
+        .role-box {
+            text-align: center;
+        }
+
+        .role-box a {
+            display: inline-block;
+            width: 160px;
+            height: 160px;
+            border: 0px solid #0aecfe;
+            background: url(https://p0.ssl.qhimg.com/t0117b9b7dec36af126.png) no-repeat 0 bottom;
+            -o-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -ms-border-radius: 50%;
+            border-radius: 50%;
+        }
+
+        .role-box1 a {
+            background-position: 0 bottom;
+        }
+
+        .role-box2 a {
+            background-position: right bottom;
+        }
+
+        .role-box1 a:hover,
+        .role-box1 a.cur {
+            background-position: 0 top;
+        }
+
+        .role-box2 a:hover,
+        .role-box2 a.cur {
+            background-position: right top;
+        }
+
+        .infos {
+            width: 450px;
+            margin: 0 auto;
+        }
+
+        .flist {
+            height: 70px;
+        }
+
+        .fname {
+            font-size: 14px;
+            color: #fff;
+        }
+
+        .ftext {
+            width: 303px;
+            height: 38px;
+            line-height: 38px;
+            background: none;
+            border: 1px solid #0aecfe;
+            color: #0aecfe;
+            -o-border-radius: 0px;
+            -moz-border-radius: 0px;
+            -webkit-border-radius: 0px;
+            -ms-border-radius: 0px;
+            border-radius: 0px;
+        }
+
+        .infos .fsel {
+            background: url("https://p0.ssl.qhimg.com/t01284d4ff4dc68eb5f.png") no-repeat 0 4px;
+            color: #fff;
+            font-size: 14px;
+            margin-right: 15px;
+        }
+
+        .infos .fsel-seled {
+            background-position: 0 -62px;
+        }
+
+        .select_container_nw {
+            top: -6px;
+        }
+
+        .select_main {
+            height: 36px;
+            border: 1px solid #0aecfe;
+            background: none;
+        }
+
+        .select_list {
+            background: #091022;
+        }
+
+        .select_content {
+            padding: 6px 0px 6px 10px;
+            color: #0aecfe;
+        }
+
+        .select_arrow,
+        .select_arrow_after {
+            border-top-color: #0aecfe;
+        }
+
+        .select_list>.select_list_body ul li:hover {
+            background: #0aecfe;
+        }
+
+        .suc {
+            width: 209px;
+            height: 239px;
+            margin: 0 auto;
+            background: url("https://p0.ssl.qhimg.com/t01521ce67e772e0b2c.png") no-repeat 0 0;
+        }
+
+        .modal-body .info p {
+            font-size: 18px;
+            color: #fff;
+            text-align: center;
+            text-indent: 0;
+        }
+
+        .modal-open .modal:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            filter: alpha(opacity=50);
+            -moz-opacity: 0.5;
+            -khtml-opacity: 0.5;
+            opacity: 0.5;
+        }
+
+        .top-nav li {
+            padding: 0 14px;
+        }
+
+        .top-nav li.new {
+            background: url(https://p0.ssl.qhimg.com/t012169fb3d48dc94c2.png) no-repeat 74px 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <div class="logo"><a href="https://www.ecut.edu.cn/"><img src="../../assets/logo.png" alt=""></a></div>
+            <ul class="top-nav" id='topNav'>
+                <li><a href="#intro">比赛介绍</a></li>
+                <li><a href="#form">参赛对象</a></li>
+                <li><a href="#way">比赛方式</a></li>
+                <li><a href="#lesson">比赛安排</a></li>
+                <li><a href="#reward">奖项设置</a></li>
+                <li><a href="#org">赛事组织</a></li>
+                <li><a href="#concat">联系方式</a></li>
+                <li class="new"></li>
+            </ul>
+            <ul class="navTools">
+                <li></a>&nbsp;&nbsp;&nbsp;&nbsp;<a rels="env" href="../login/login.html" id="hiddenLogin" >登录</a>&nbsp;&nbsp;<a
+                        href="../login/register.html"  id="hiddenRegister">注册</a>
+                        <span id="showPersonalCenter" style="display: none;">
+                            <a href="">个人中心</a>    
+                        </span> 
+                      
+                </li>
+                 
+            </ul>
+        </div>
+    </header>
+
+    <div class="banner"></div>
+
+
+    <div class="meeting-intro-wrap">
+        <div class="meeting-box meeting-intro"><span class="meeting-anchor" id="intro" name="intro"></span>
+            <div class="meeting-ttl"><span>比赛介绍</span></div>
+            <div class="meeting-intro-con">
+                <p>为深入学习贯彻习近平总书记关于网络强国的重要思想和“四个坚持”的重要指示精神，贯彻实施《中华人民共和国网络安全法》等法律法规，认真落实中央网信办《关于加强网络安全学科建设和人才培养的意见》（中网办〔2016〕4号）精神，进一步推进网络安全宣传教育和网络安全人才培养发现，根据江西省第七届“国家网络安全宣传周”活动的筹划安排，拟举办第三届江西省高校网络安全技能大赛。
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="pager">
+        <div class="meeting-box meeting-guest"><span class="meeting-anchor" id="form" name="form"></span>
+            <div class="meeting-ttl"><span>参赛对象</span></div>
+            <div class="game-way">
+                <!-- <p>全省各级教育行政部门和各级各类学校在职在校人员均可报名参加。大赛参赛人员采取团体报名形式，组团形式不受单位限制可自由组队，每支参赛团队最多不超过5人；参赛白帽导师以个人名义报名。<b>（点击查看<a
+                            style="text-decoration: underline;color: #34dacf;"
+                            href="https://www.butian.net/Home/Active/getStatement?id=1">《参赛说明手册》</a>）</b></p> -->
+                <p>全省高校在职在校人员（包含学生及教师）均可报名参加，分本科院校组和高职高专组两个赛道。大赛采取团体报名形式，每支参赛团队最多不超过5人。</p>
+
+                <div class="game-way-btn" id="waybtn">
+                    <!-- <a rels="env"
+                        href="https://user.butian.net/user/sign-in?next=<?php echo (C("SITE_URL")); ?>/login.html&style=1">请先登录</a> -->
+                </div>
+
+            </div>
+        </div>
+        <div class="meeting-box meeting-schdule"><span class="meeting-anchor" id="way" name="way"></span>
+            <div class="meeting-ttl"><span>比赛方式</span></div>
+            <div class="meeting-schdule-con">
+                <div class="meeting-schdule-main">
+                    <p>采取线上CTF技能答题比赛形式。选手登录江西教育网进行在线CTF技能答题，时间3小时，根据团队解题情况进行评分。
+                        初赛结束后，按参赛团队CTF解题总得分进行排名，本科院校组和高职高专组各前10名的参赛队伍进入决赛。</p>
+                    <p>分线上和线下进行。线上培训，邀请专家对进入决赛的20支队伍进行赛前在线培训。线下网络安全技术交流会，面向所有决赛队伍，于9月14日在应急中心（东华理工大学）举行，围绕网络安全攻防技术进行深入探讨，并对线上培训遗留问题进行答疑解惑。 </p>
+                    <p>9月15日第七届国家网络安全宣传周校园日当天，在应急中心（东华理工大学）现场进行。决赛采取CTF夺旗赛+混战AWD攻防对抗赛方式。
+                        上午第一轮，参赛选手通过竞赛平台进行CTF夺旗赛，对选手单项技能进行考核，根据团队解题情况进行评分，时间为2小时。
+                        下午第二轮，参赛选手在竞赛平台进行AWD攻防对抗，对选手攻击以及防守能力进行考核，由平台计算得分，时间为3小时。
+                        大赛裁判组根据各支队伍上、下午比赛得分情况，进行综合评定与核对。</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="meeting-box meeting-highlights"><span class="meeting-anchor" id="lesson" name="lesson"></span>
+            <div class="meeting-ttl"><span>比赛安排</span></div>
+            <div class="meeting-time">
+                <img src="https://p0.ssl.qhimg.com/t01bdd723df091ba5ab.png" alt="赛程安排">
+            </div>
+        </div>
+        <div class="meeting-box meeting-highlights"><span class="meeting-anchor" id="reward" name="reward"></span>
+            <div class="meeting-ttl"><span>奖项设置</span></div>
+            <div class="meeting-highlights-con">
+                <img src="https://p0.ssl.qhimg.com/t0190d8a14f4de4dbb4.png" alt="奖项设置">
+            </div>
+        </div>
+    </div>
+    <div class="meeting-box meeting-partner"><span class="meeting-anchor" id="org" name="org"></span>
+        <div class="meeting-ttl"><span>赛事组织</span></div>
+        <div class="meeting-partner-con">
+            <div class="meeting-sttl"><span>指导单位</span></div>
+            <div>
+                <p>省委网信办</p>
+            </div>
+            <div class="meeting-sttl"><span>主办单位</span></div>
+            <div>
+                <p>省委教育工委、省教育厅，国家计算机网络应急技术处理协调中心江西分中心（以下简称江西分中心）</p>
+            </div>
+            <div class="meeting-sttl"><span>承办单位</span></div>
+            <div>
+                <p>江西教育网络安全应急中心（东华理工大学，以下简称应急中心）</p>
+            </div>
+            <div class="meeting-sttl"><span>协办单位</span></div>
+            <div>
+                <p>深信服科技有限公司、北京易霖博信息技术有限公司（以下简称深信服公司、易霖博公司）</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- </div> -->
+    <div class="meeting-guide-wrap">
+        <div class="meeting-box meeting-guide"><span class="meeting-anchor" id="concat" name="concat"></span>
+            <div class="meeting-ttl"><span>联系方式</span></div>
+            <div class="meeting-guide-con">
+                <div class="meeting-guide-else">
+                    <p><span>报名专线电话：010-56509055（工作时间：周一至周五，10:00-19:00）</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-subscribe" tabindex="-1" role="dialog" id="popStep1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="">保密协议</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="agree">
+                        <h3><b>保密协议</b></h3>
+                        <p>&nbsp;</p>
+                        <p><b>本协议适用于参加江西省教育系统网络安全技能大赛的参赛选手，在您参加比赛前，请您务必仔细阅读并透彻理解本协议。如果您不同意本协议或其中任何内容，您应立即停止参与本次比赛计划；如果您签署协议将被视为您对协议全部内容的认可，您承诺遵守本计划所适用的法律、法规、规章及其他政府规范性文件的规定，如有违反而造成任何法律后果，您将独立承担所有相应的法律责任。</b>
+                        </p>
+                        <p><b>本协议约定甲乙双方如下，本平台指补天漏洞响应平台，</b></p>
+                        <p><b>甲方：中共江西省委教育工委、江西省教育厅</b></p>
+                        <p><b>乙方：参赛选手</b></p>
+                        <h3>第一条 宗旨目的</h3>
+                        <p>乙方参与本次大赛，为保护甲方及比赛提供目标系统的高校对其保密信息拥有的合法权益，乙方与甲方及高校协商一致，达成如下协议。</p>
+                        <h3>第二条 保密信息</h3>
+                        <p>“保密信息”指在乙方在对甲方及高校提供的目标系统进行漏洞挖掘过程中，测试出或发现的漏洞信息以及其他非公开的相关信息。</p>
+                        <h3>第三条 保密义务</h3>
+                        <p>1.
+                            乙方应接受本协议保密条款的约束，任何时候均不得公开漏洞详情及漏洞相关的任何细节，避免给甲方和高校带来利益、信誉的损失，透露给本平台、相关高校及甲方及高校之外的第三方造成的任何损失均由乙方个人承担。
+                        </p>
+                        <p>2. 比赛过程中，乙方需要保证研究漏洞的方法、方式、工具及手段的合法性，本平台对此不承担任何法律责任。</p>
+                        <p>3.
+                            乙方知悉保密信息被未经授权的第三方使用或披露的，应立即通知相关高校和甲方，并协助采取救济措施。若前述保密信息泄露系因乙方的原因，则乙方有义务尽其最大努力与甲方及高校采取救济措施，以尽可能减少甲方及高校的损失，由此而产生的费用由乙方承担。
+                        </p>
+                        <p>4.
+                            除非经甲方及高校事先书面同意，乙方不得以任何形式（包括但不限于口头、书面、影印、复制、摄影、电子传送、纸质发表或其他方式）向第三方披露保密信息，也不得将保密信息进行复制修改、重组、逆向工程或试图从保密信息或任何相关之材料、软件导出原始程序或基础数据。
+                        </p>
+
+                        <h3>第四条 保密义务之例外</h3>
+                        <p>如果乙方能够书面证明存在下列情形，则不承担保密义务：</p>
+                        <p>1.甲方及高校披露时，该保密信息已经合法公开；</p>
+                        <p>2.乙方未使用甲方及高校任何信息，独立开发的保密信息；</p>
+                        <p>3.乙方从第三方获取的保密信息，且第三方不受保密义务的约束；</p>
+                        <p>4.非因违反本协议约定的行为，保密信息已经或正在被公开；</p>
+                        <p>5.依照适用的法律法规或有关行政、司法机关的要求，乙方必须展示保密信息或依据保密信息做出任何意见、判断或推荐，乙方应提前通知甲方及高校，以便甲方及高校可寻求适当的补救方法。在公开上述保密信息时，乙方依据本条款透露的信息范围应限于监管机构要求的最低要求，并应尽其合理努力在最大程度上维持所透露的信息的保密性。
+                        </p>
+                        <h3>第五条 不授予其他权利及许可</h3>
+                        <p>1.本协议不构成协议双方建立任何雇佣关系，如协议双方需要建立雇佣关系，应另行签订相关协议。</p>
+                        <p>2.甲方及高校根据协议向乙方披露保密信息或其他信息，不构成授予任何商标权、专利等知识产权的许可行为，也不构成任何保证不会侵犯第三方知识产权的承诺行为；甲方及高校给乙方提供的任何预测不构成承诺行为。
+                        </p>
+                        <h3>第六条 期限</h3>
+                        <p>本协议期限为壹（1）年，自乙方同意之日起生效。</p>
+                        <p>本协议的乙方承担永久性的保密义务,不因协议的解除或终止而免除，除非符合第四条保密义务之例外。</p>
+                        <h3>第七条 违约赔偿</h3>
+                        <p>如果乙方违反本协议约定之保密义务，直接或间接的导致甲方及高校遭受损失，应当依法向甲方及高校赔偿实际以及可得利益的损失，包括但不限于补偿金、赔偿金、诉讼费、律师费等。</p>
+                        <h3>第八条 适用法律及争议解决</h3>
+                        <p>本协议受中华人民共和国法律管辖，并按其解释。与本协议有关的任何纠纷或争议应通过友好协商解决。如不能协商解决，任何一方应提交南昌仲裁委员会进行仲裁，仲裁决定是终局的，对双方均有约束力。仲裁地点为中国南昌。
+                        </p>
+                        <p>&nbsp;</p>
+                    </div>
+                    <div class="agreecheckbox" id="agreecheckbox">
+                        <label class="fsel" for="argee" id="argeeLabel"><input class="inputSel" type="checkbox"
+                                name="agree" id="argee" /> 我已经详细阅读并严格遵守该协议</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-blue btn-dis" id="btnStep1">申请加入项目</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+    <div class="modal fade modal-subscribe" tabindex="-1" role="dialog" id="popStep2">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="">选择报名角色</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="role">
+                        <p>选手报名类型（一旦选择不可修改）</p>
+                        <p
+                            style="text-align: left; padding:0px 50px 10px 50px;line-height: 36px;font-size:16px;color: #0aecfe;">
+                            报名角色的选择：</p>
+                        <p
+                            style="text-align: left; padding:0px 50px 0px 50px;line-height: 36px;font-size:14px;color: #0aecfe;">
+                            <b style="font-size: 16px;">导师：</b>补天平台提交过漏洞、有渗透测试经验的白帽子，个人参与。</p>
+                        <p
+                            style="text-align: left;padding: 0 50px 50px 50px;line-height: 36px;font-size:14px;color: #0aecfe;">
+                            <b
+                                style="font-size: 16px;">选手：</b>江西省教育行政部门（学校）的在职人员或在校生都可报名。组团参与，人数1~5人，团队的每个选手均要注册并报名（注意：同一团队的队名需统一）
+                        </p>
+                        <div class="coloumn-2-wrap coloumn-2-wrap-role">
+                            <div class="coloumn-2-1">
+                                <div class="role-box role-box1"><a cval="1" href="###"></a></div>
+                            </div>
+                            <div class="coloumn-2-2">
+                                <div class="role-box role-box2"><a cval="2" href="###"></a></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-blue btn-dis" id="btnStep2">报名</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade modal-subscribe" tabindex="-1" role="dialog" id="popStep3" cval=''>
+
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form action="" id="fm">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="">选手报名信息</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="infos">
+                            <div class="flist" rel="flist" id="armytype">
+                                <label for="" class="fname"><span class="frequired"
+                                        rel="frequired">*</span>队伍类型：</label>
+                                <label class="fsel fsel-seled" for="army1" id="armyLabel1"><input class="inputSel"
+                                        type="checkbox" checked="checked" value="1" name="schooltype"
+                                        id="army1" />高校</label>
+                                <label class="fsel" for="army2" id="armyLabel2"><input class="inputSel" type="checkbox"
+                                        name="schooltype" id="army2" value="2" />单位</label>
+                            </div>
+
+                            <div class="flist" rel="flist" id="selbox1">
+                                <label for="" class="fname"><span class="frequired"
+                                        rel="frequired">*</span>高校信息：</label>
+                                <select data-pass="0" class="flist-army" id="selarmy1" name="school">
+                                    <option value="-1">请选择</option>
+                                    <option value="南昌大学">南昌大学</option>
+                                    <option value="江西师范大学">江西师范大学</option>
+                                    <option value="江西财经大学">江西财经大学</option>
+                                    <option value="江西农业大学">江西农业大学</option>
+                                    <option value="华东交通大学">华东交通大学</option>
+                                    <option value="东华理工大学">东华理工大学</option>
+                                    <option value="江西理工大学">江西理工大学</option>
+                                    <option value="南昌航空大学">南昌航空大学</option>
+                                    <option value="井冈山大学">井冈山大学</option>
+                                    <option value="江西科技师范大学">江西科技师范大学</option>
+                                    <option value="江西中医药大学">江西中医药大学</option>
+                                    <option value="景德镇陶瓷大学">景德镇陶瓷大学</option>
+                                    <option value="赣南医学院">赣南医学院</option>
+                                    <option value="赣南师范大学">赣南师范大学</option>
+                                    <option value="宜春学院">宜春学院</option>
+                                    <option value="上饶师范学院">上饶师范学院</option>
+                                    <option value="九江学院">九江学院</option>
+                                    <option value="南昌工程学院">南昌工程学院</option>
+                                    <option value="江西科技学院">江西科技学院</option>
+                                    <option value="南昌理工学院">南昌理工学院</option>
+                                    <option value="江西警察学院">江西警察学院</option>
+                                    <option value="新余学院">新余学院</option>
+                                    <option value="江西服装学院">江西服装学院</option>
+                                    <option value="南昌工学院">南昌工学院</option>
+                                    <option value="南昌师范学院">南昌师范学院</option>
+                                    <option value="萍乡学院">萍乡学院</option>
+                                    <option value="景德镇学院">景德镇学院</option>
+                                    <option value="江西工程学院">江西工程学院</option>
+                                    <option value="江西应用科技学院">江西应用科技学院</option>
+                                    <option value="豫章师范学院">豫章师范学院</option>
+                                    <option value="江西广播电视大学">江西广播电视大学</option>
+                                    <option value="江西经济管理干部学院">江西经济管理干部学院</option>
+                                    <option value="江西中医药高等专科学校">江西中医药高等专科学校</option>
+                                    <option value="江西医学高等专科学校">江西医学高等专科学校</option>
+                                    <option value="江西师范高等专科学校">江西师范高等专科学校</option>
+                                    <option value="赣州师范高等专科学校">赣州师范高等专科学校</option>
+                                    <option value="宜春幼儿师范高等专科学校">宜春幼儿师范高等专科学校</option>
+                                    <option value="抚州幼儿师范高等专科学校">抚州幼儿师范高等专科学校</option>
+                                    <option value="上饶幼儿师范高等专科学校">上饶幼儿师范高等专科学校</option>
+                                    <option value="江西陶瓷工艺美术职业技术学院">江西陶瓷工艺美术职业技术学院</option>
+                                    <option value="江西信息应用职业技术学院">江西信息应用职业技术学院</option>
+                                    <option value="江西先锋软件职业技术学院">江西先锋软件职业技术学院</option>
+                                    <option value="江西工业贸易职业技术学院">江西工业贸易职业技术学院</option>
+                                    <option value="江西工业工程职业技术学院">江西工业工程职业技术学院</option>
+                                    <option value="江西工业职业技术学院">江西工业职业技术学院</option>
+                                    <option value="江西电力职业技术学院">江西电力职业技术学院</option>
+                                    <option value="江西机电职业技术学院">江西机电职业技术学院</option>
+                                    <option value="江西交通职业技术学院">江西交通职业技术学院</option>
+                                    <option value="江西现代职业技术学院">江西现代职业技术学院</option>
+                                    <option value="江西航空职业技术学院">江西航空职业技术学院</option>
+                                    <option value="江西制造职业技术学院">江西制造职业技术学院</option>
+                                    <option value="江西建设职业技术学院">江西建设职业技术学院</option>
+                                    <option value="江西冶金职业技术学院">江西冶金职业技术学院</option>
+                                    <option value="江西工商职业技术学院">江西工商职业技术学院</option>
+                                    <option value="江西枫林涉外经贸职业学院">江西枫林涉外经贸职业学院</option>
+                                    <option value="江西新能源科技职业学院">江西新能源科技职业学院</option>
+                                    <option value="江西环境工程职业学院">江西环境工程职业学院</option>
+                                    <option value="江西应用工程职业学院">江西应用工程职业学院</option>
+                                    <option value="江西农业工程职业学院">江西农业工程职业学院</option>
+                                    <option value="江西应用技术职业学院">江西应用技术职业学院</option>
+                                    <option value="江西旅游商贸职业学院">江西旅游商贸职业学院</option>
+                                    <option value="江西司法警官职业学院">江西司法警官职业学院</option>
+                                    <option value="江西外语外贸职业学院">江西外语外贸职业学院</option>
+                                    <option value="江西生物科技职业学院">江西生物科技职业学院</option>
+                                    <option value="江西泰豪动漫职业学院">江西泰豪动漫职业学院</option>
+                                    <option value="江西工程职业学院">江西工程职业学院</option>
+                                    <option value="江西艺术职业学院">江西艺术职业学院</option>
+                                    <option value="江西财经职业学院">江西财经职业学院</option>
+                                    <option value="江西卫生职业学院">江西卫生职业学院</option>
+                                    <option value="江西青年职业学院">江西青年职业学院</option>
+                                    <option value="江西科技职业学院">江西科技职业学院</option>
+                                    <option value="江西水利职业学院">江西水利职业学院</option>
+                                    <option value="江西传媒职业学院">江西传媒职业学院</option>
+                                    <option value="江西洪州职业学院">江西洪州职业学院</option>
+                                    <option value="南昌影视传播职业学院">南昌影视传播职业学院</option>
+                                    <option value="南昌职业学院">南昌职业学院</option>
+                                    <option value="宜春职业技术学院">宜春职业技术学院</option>
+                                    <option value="赣南卫生健康职业学院">赣南卫生健康职业学院</option>
+                                    <option value="赣西科技职业学院">赣西科技职业学院</option>
+                                    <option value="九江职业大学">九江职业大学</option>
+                                    <option value="九江职业技术学院">九江职业技术学院</option>
+                                    <option value="抚州职业技术学院">抚州职业技术学院</option>
+                                    <option value="上饶职业技术学院">上饶职业技术学院</option>
+                                    <option value="景德镇陶瓷职业技术学院">景德镇陶瓷职业技术学院</option>
+                                    <option value="共青科技职业学院">共青科技职业学院</option>
+                                    <option value="吉安职业技术学院">吉安职业技术学院</option>
+                                    <option value="鹰潭职业技术学院">鹰潭职业技术学院</option>
+                                    <option value="南昌教育学院">南昌教育学院</option>
+                                    <option value="南昌大学科学技术学院">南昌大学科学技术学院</option>
+                                    <option value="南昌大学共青学院">南昌大学共青学院</option>
+                                    <option value="江西师范大学科学技术学院">江西师范大学科学技术学院</option>
+                                    <option value="江西农业大学南昌商学院">江西农业大学南昌商学院</option>
+                                    <option value="江西财经大学现代经济管理学院">江西财经大学现代经济管理学院</option>
+                                    <option value="华东交通大学理工学院">华东交通大学理工学院</option>
+                                    <option value="江西理工大学应用科学学院">江西理工大学应用科学学院</option>
+                                    <option value="华东理工大学长江学院">华东理工大学长江学院</option>
+                                    <option value="南昌航空大学科技学院">南昌航空大学科技学院</option>
+                                    <option value="景德镇陶瓷学院科技艺术学院">景德镇陶瓷学院科技艺术学院</option>
+                                    <option value="江西中医药大学科技学院">江西中医药大学科技学院</option>
+                                    <option value="赣南师范学院科技学院">赣南师范学院科技学院</option>
+                                    <option value="江西科技师范大学理工学院">江西科技师范大学理工学院</option>
+                                </select>
+                                <p class="ferror" rel="ferror"></p>
+                            </div>
+                            <div class="flist" rel="flist" id="selbox2" style="display: none;">
+                                <label for="" class="fname"><span class="frequired"
+                                        rel="frequired">*</span>单位信息：</label>
+                                <select data-pass="0" class="flist-army" id="selarmy2" name="school">
+                                    <option value="-1">请选择</option>
+                                    <option value="江西省教育厅">江西省教育厅</option>
+                                    <option value="江西省南昌市教育局">江西省南昌市教育局</option>
+                                    <option value="江西省南昌市东湖区教育科技体育局">江西省南昌市东湖区教育科技体育局</option>
+                                    <option value="江西省南昌市西湖区教育科技体育局">江西省南昌市西湖区教育科技体育局</option>
+                                    <option value="江西省南昌市青云谱区教育科技体育局">江西省南昌市青云谱区教育科技体育局</option>
+                                    <option value="江西省南昌市湾里区教育科技体育局">江西省南昌市湾里区教育科技体育局</option>
+                                    <option value="江西省南昌市青山湖区教育科技体育局">江西省南昌市青山湖区教育科技体育局</option>
+                                    <option value="江西省南昌市青山湖区教育体育局">江西省南昌市青山湖区教育体育局</option>
+                                    <option value="江西省南昌市新建区教育科技体育局">江西省南昌市新建区教育科技体育局</option>
+                                    <option value="江西省南昌市南昌县教育科技体育局">江西省南昌市南昌县教育科技体育局</option>
+                                    <option value="江西省南昌市南昌县教育体育局">江西省南昌市南昌县教育体育局</option>
+                                    <option value="江西省南昌市安义县教育科技体育局">江西省南昌市安义县教育科技体育局</option>
+                                    <option value="江西省南昌市进贤县教育体育局">江西省南昌市进贤县教育体育局</option>
+                                    <option value="江西省南昌市市直属代管">江西省南昌市市直属代管</option>
+                                    <option value="江西省南昌市南昌经济技术开发区代管">江西省南昌市南昌经济技术开发区代管</option>
+                                    <option value="南昌市红谷滩新区教育事业管理中心">南昌市红谷滩新区教育事业管理中心</option>
+                                    <option value="江西省南昌市南昌高新区代管">江西省南昌市南昌高新区代管</option>
+                                    <option value="江西省南昌市厂办学校代管">江西省南昌市厂办学校代管</option>
+                                    <option value="江西省南昌市桑海经济技术开发区代管">江西省南昌市桑海经济技术开发区代管</option>
+                                    <option value="江西省景德镇市教育局">江西省景德镇市教育局</option>
+                                    <option value="江西省景德镇市昌江区教育体育局">江西省景德镇市昌江区教育体育局</option>
+                                    <option value="江西省景德镇市珠山区教育体育局">江西省景德镇市珠山区教育体育局</option>
+                                    <option value="江西省景德镇市浮梁县教育体育局">江西省景德镇市浮梁县教育体育局</option>
+                                    <option value="江西省景德镇市乐平市教育体育局">江西省景德镇市乐平市教育体育局</option>
+                                    <option value="江西省景德镇市市直属代管">江西省景德镇市市直属代管</option>
+                                    <option value="江西省景德镇市陶瓷工业园区代管">江西省景德镇市陶瓷工业园区代管</option>
+                                    <option value="江西省萍乡市教育局">江西省萍乡市教育局</option>
+                                    <option value="江西省萍乡市安源区教育局">江西省萍乡市安源区教育局</option>
+                                    <option value="江西省萍乡市湘东区教育局">江西省萍乡市湘东区教育局</option>
+                                    <option value="江西省萍乡市莲花县教育局">江西省萍乡市莲花县教育局</option>
+                                    <option value="江西省萍乡市上栗县教育局">江西省萍乡市上栗县教育局</option>
+                                    <option value="江西省萍乡市芦溪县教育局">江西省萍乡市芦溪县教育局</option>
+                                    <option value="江西省萍乡市市直属代管">江西省萍乡市市直属代管</option>
+                                    <option value="江西萍乡经济开发区教育体育局代管">江西萍乡经济开发区教育体育局代管</option>
+                                    <option value="江西省九江市教育局">江西省九江市教育局</option>
+                                    <option value="江西省九江市庐山区教育局">江西省九江市庐山区教育局</option>
+                                    <option value="江西省九江市濂溪区教育局">江西省九江市濂溪区教育局</option>
+                                    <option value="江西省九江市浔阳区教育体育局">江西省九江市浔阳区教育体育局</option>
+                                    <option value="江西省九江市浔阳区文化教育体育新闻出版局">江西省九江市浔阳区文化教育体育新闻出版局</option>
+                                    <option value="江西省九江市九江县教育局">江西省九江市九江县教育局</option>
+                                    <option value="江西省九江市武宁县教育体育局">江西省九江市武宁县教育体育局</option>
+                                    <option value="江西省九江市修水县教育体育局">江西省九江市修水县教育体育局</option>
+                                    <option value="江西省九江市永修县教育局">江西省九江市永修县教育局</option>
+                                    <option value="江西省九江市德安县教育和体育局">江西省九江市德安县教育和体育局</option>
+                                    <option value="江西省九江市都昌县教育体育局">江西省九江市都昌县教育体育局</option>
+                                    <option value="江西省九江市湖口县教育局">江西省九江市湖口县教育局</option>
+                                    <option value="江西省九江市彭泽县教育局">江西省九江市彭泽县教育局</option>
+                                    <option value="江西省九江市瑞昌市教育体育局">江西省九江市瑞昌市教育体育局</option>
+                                    <option value="江西省九江市共青城市教育和体育局">江西省九江市共青城市教育和体育局</option>
+                                    <option value="江西省九江市庐山市教育局">江西省九江市庐山市教育局</option>
+                                    <option value="江西省九江市庐山市教育体育局">江西省九江市庐山市教育体育局</option>
+                                    <option value="江西省九江市市直属代管">江西省九江市市直属代管</option>
+                                    <option value="江西省九江经济技术开发区文教局代管">江西省九江经济技术开发区文教局代管</option>
+                                    <option value="江西省九江市庐山风景名胜区管理局教育科学体育局代管">江西省九江市庐山风景名胜区管理局教育科学体育局代管</option>
+                                    <option value="江西省新余市教育局">江西省新余市教育局</option>
+                                    <option value="江西省新余市渝水区教育体育局">江西省新余市渝水区教育体育局</option>
+                                    <option value="江西省新余市分宜县教育体育局">江西省新余市分宜县教育体育局</option>
+                                    <option value="江西省新余市市直属代管">江西省新余市市直属代管</option>
+                                    <option value="江西省新余市仙女湖风景名胜区社会事业局代管">江西省新余市仙女湖风景名胜区社会事业局代管</option>
+                                    <option value="江西省新余高新技术产业开发区社会发展部代管">江西省新余高新技术产业开发区社会发展部代管</option>
+                                    <option value="江西省鹰潭市教育局">江西省鹰潭市教育局</option>
+                                    <option value="江西省鹰潭市月湖区教育体育局">江西省鹰潭市月湖区教育体育局</option>
+                                    <option value="江西省鹰潭市余江县教育体育局">江西省鹰潭市余江县教育体育局</option>
+                                    <option value="江西省鹰潭市贵溪市教育体育局">江西省鹰潭市贵溪市教育体育局</option>
+                                    <option value="江西省鹰潭市市直属代管">江西省鹰潭市市直属代管</option>
+                                    <option value="江西省鹰潭高新技术产业开发区代管">江西省鹰潭高新技术产业开发区代管</option>
+                                    <option value="江西省鹰潭市信江新区管委会代管">江西省鹰潭市信江新区管委会代管</option>
+                                    <option value="江西省鹰潭市龙虎山风景名胜区代管">江西省鹰潭市龙虎山风景名胜区代管</option>
+                                    <option value="江西省赣州市教育局">江西省赣州市教育局</option>
+                                    <option value="江西省赣州市章贡区教育局">江西省赣州市章贡区教育局</option>
+                                    <option value="江西省赣州市南康区教育局">江西省赣州市南康区教育局</option>
+                                    <option value="江西省赣州市赣县教育局">江西省赣州市赣县教育局</option>
+                                    <option value="江西省赣州市信丰县教育局">江西省赣州市信丰县教育局</option>
+                                    <option value="江西省赣州市大余县教育局">江西省赣州市大余县教育局</option>
+                                    <option value="江西省赣州市上犹县教育局">江西省赣州市上犹县教育局</option>
+                                    <option value="江西省赣州市崇义县教育局">江西省赣州市崇义县教育局</option>
+                                    <option value="江西省赣州市安远县教育局">江西省赣州市安远县教育局</option>
+                                    <option value="江西省赣州市龙南县教育体育局">江西省赣州市龙南县教育体育局</option>
+                                    <option value="江西省赣州市定南县教育体育局">江西省赣州市定南县教育体育局</option>
+                                    <option value="江西省赣州市全南县教育局">江西省赣州市全南县教育局</option>
+                                    <option value="江西省赣州市宁都县教育局">江西省赣州市宁都县教育局</option>
+                                    <option value="江西省赣州市于都县教育局">江西省赣州市于都县教育局</option>
+                                    <option value="江西省赣州市兴国县教育局">江西省赣州市兴国县教育局</option>
+                                    <option value="江西省赣州市会昌县教育局">江西省赣州市会昌县教育局</option>
+                                    <option value="江西省赣州市寻乌县教育局">江西省赣州市寻乌县教育局</option>
+                                    <option value="江西省赣州市石城县教育局">江西省赣州市石城县教育局</option>
+                                    <option value="江西省赣州市瑞金市教育局">江西省赣州市瑞金市教育局</option>
+                                    <option value="江西省赣州市市直属代管">江西省赣州市市直属代管</option>
+                                    <option value="江西省赣州市赣州经济技术开发区社会事务管理局代管">江西省赣州市赣州经济技术开发区社会事务管理局代管</option>
+                                    <option value="江西省赣州市蓉江新区社会事务管理局代管采集">江西省赣州市蓉江新区社会事务管理局代管采集</option>
+                                    <option value="江西省吉安市教育局">江西省吉安市教育局</option>
+                                    <option value="江西省吉安市吉州区教育局">江西省吉安市吉州区教育局</option>
+                                    <option value="江西省吉安市青原区教育体育局">江西省吉安市青原区教育体育局</option>
+                                    <option value="江西省吉安市吉安县教育局">江西省吉安市吉安县教育局</option>
+                                    <option value="江西省吉安市吉水县教育体育局">江西省吉安市吉水县教育体育局</option>
+                                    <option value="江西省吉安市峡江县教育体育局">江西省吉安市峡江县教育体育局</option>
+                                    <option value="江西省吉安市新干县教育体育局">江西省吉安市新干县教育体育局</option>
+                                    <option value="江西省吉安市永丰县教育体育局">江西省吉安市永丰县教育体育局</option>
+                                    <option value="江西省吉安市泰和县教育体育局">江西省吉安市泰和县教育体育局</option>
+                                    <option value="江西省吉安市遂川县教育体育局">江西省吉安市遂川县教育体育局</option>
+                                    <option value="江西省吉安市万安县教育体育局">江西省吉安市万安县教育体育局</option>
+                                    <option value="江西省吉安市安福县教育体育局">江西省吉安市安福县教育体育局</option>
+                                    <option value="江西省吉安市永新县教育体育局">江西省吉安市永新县教育体育局</option>
+                                    <option value="江西省吉安市井冈山市教育局">江西省吉安市井冈山市教育局</option>
+                                    <option value="江西省吉安市市直属代管">江西省吉安市市直属代管</option>
+                                    <option value="江西省吉安市国家井冈山经济技术开发区">江西省吉安市国家井冈山经济技术开发区</option>
+                                    <option value="江西省宜春市教育局">江西省宜春市教育局</option>
+                                    <option value="江西省宜春市袁州区教育局">江西省宜春市袁州区教育局</option>
+                                    <option value="江西省宜春市奉新县教育局">江西省宜春市奉新县教育局</option>
+                                    <option value="江西省宜春市万载县教育局">江西省宜春市万载县教育局</option>
+                                    <option value="江西省宜春市上高县教育局">江西省宜春市上高县教育局</option>
+                                    <option value="江西省宜春市宜丰县教育局">江西省宜春市宜丰县教育局</option>
+                                    <option value="江西省宜春市靖安县教育局">江西省宜春市靖安县教育局</option>
+                                    <option value="江西省宜春市铜鼓县教育局">江西省宜春市铜鼓县教育局</option>
+                                    <option value="江西省宜春市丰城市教育局">江西省宜春市丰城市教育局</option>
+                                    <option value="江西省宜春市樟树市教育局">江西省宜春市樟树市教育局</option>
+                                    <option value="江西省宜春市高安市教育局">江西省宜春市高安市教育局</option>
+                                    <option value="江西省宜春市市直属代管">江西省宜春市市直属代管</option>
+                                    <option value="江西省宜春市宜春经济技术开发区管委会代管">江西省宜春市宜春经济技术开发区管委会代管</option>
+                                    <option value="江西省宜春市宜阳新区管委会代管">江西省宜春市宜阳新区管委会代管</option>
+                                    <option value="江西省宜春市明月山温泉风景名胜区代管">江西省宜春市明月山温泉风景名胜区代管</option>
+                                    <option value="江西省抚州市教育局">江西省抚州市教育局</option>
+                                    <option value="江西省抚州市临川区教育体育局">江西省抚州市临川区教育体育局</option>
+                                    <option value="江西省抚州市南城县教育体育局">江西省抚州市南城县教育体育局</option>
+                                    <option value="江西省抚州市黎川县教育局">江西省抚州市黎川县教育局</option>
+                                    <option value="江西省抚州市黎川县教育体育局">江西省抚州市黎川县教育体育局</option>
+                                    <option value="江西省抚州市南丰县教育体育局">江西省抚州市南丰县教育体育局</option>
+                                    <option value="江西省抚州市崇仁县教育局">江西省抚州市崇仁县教育局</option>
+                                    <option value="江西省抚州市崇仁县教育体育局">江西省抚州市崇仁县教育体育局</option>
+                                    <option value="江西省抚州市乐安县教育局">江西省抚州市乐安县教育局</option>
+                                    <option value="江西省抚州市乐安县教育体育局">江西省抚州市乐安县教育体育局</option>
+                                    <option value="江西省抚州市宜黄县教育体育局">江西省抚州市宜黄县教育体育局</option>
+                                    <option value="江西省抚州市金溪县教育体育局">江西省抚州市金溪县教育体育局</option>
+                                    <option value="江西省抚州市资溪县教育科技体育局">江西省抚州市资溪县教育科技体育局</option>
+                                    <option value="江西省抚州市东乡县教育局">江西省抚州市东乡县教育局</option>
+                                    <option value="江西省抚州市广昌县教育体育局">江西省抚州市广昌县教育体育局</option>
+                                    <option value="江西省抚州市市直属代管">江西省抚州市市直属代管</option>
+                                    <option value="江西省抚州高新技术产业开发区代管">江西省抚州高新技术产业开发区代管</option>
+                                    <option value="江西省上饶市教育局">江西省上饶市教育局</option>
+                                    <option value="江西省上饶市信州区教育体育局">江西省上饶市信州区教育体育局</option>
+                                    <option value="江西省上饶市广丰区教育局">江西省上饶市广丰区教育局</option>
+                                    <option value="江西省上饶市广丰区教育体育局">江西省上饶市广丰区教育体育局</option>
+                                    <option value="江西省上饶市上饶县教育体育局">江西省上饶市上饶县教育体育局</option>
+                                    <option value="江西省上饶市玉山县教育体育局">江西省上饶市玉山县教育体育局</option>
+                                    <option value="江西省上饶市铅山县教育体育局">江西省上饶市铅山县教育体育局</option>
+                                    <option value="江西省上饶市横峰县教育局">江西省上饶市横峰县教育局</option>
+                                    <option value="江西省上饶市横峰县教育体育局">江西省上饶市横峰县教育体育局</option>
+                                    <option value="江西省上饶市弋阳县教育体育局">江西省上饶市弋阳县教育体育局</option>
+                                    <option value="江西省上饶市余干县教育局">江西省上饶市余干县教育局</option>
+                                    <option value="江西省上饶市鄱阳县教育体育局">江西省上饶市鄱阳县教育体育局</option>
+                                    <option value="江西省上饶市万年县教育体育局">江西省上饶市万年县教育体育局</option>
+                                    <option value="江西省上饶市婺源县教育体育局">江西省上饶市婺源县教育体育局</option>
+                                    <option value="江西省上饶市德兴市教育体育局">江西省上饶市德兴市教育体育局</option>
+                                    <option value="江西省上饶市市直属代管">江西省上饶市市直属代管</option>
+                                    <option value="江西省上饶市三清山风景名胜区管理委员会代管">江西省上饶市三清山风景名胜区管理委员会代管</option>
+                                </select>
+                                <p class="ferror" rel="ferror"></p>
+                            </div>
+                            <div class="flist" rel="flist">
+                                <label for="" class="fname"><span class="frequired"
+                                        rel="frequired">*</span>团队名称：</label>
+                                <input data-pass="0" type="text" placeholder="" id="teamname" name="teamname"
+                                    class="ftext" data-validator='{"required":{"value":true,"msg":"请输入团队名称"}}'
+                                    data-error="">
+                                <p class="ferror" rel="ferror"></p>
+                            </div>
+                            <div class="flist" rel="flist">
+                                <label for="" class="fname"><span class="frequired" rel="frequired">*</span>姓名：</label>
+                                <input data-pass="0" type="text" placeholder="" id="name" name="name" class="ftext"
+                                    data-validator='{"required":{"value":true,"msg":"请输入姓名"},"maxLength":{"value":30,"msg":"最多15个字"}}'
+                                    data-error="">
+                                <p class="ferror" rel="ferror"></p>
+                            </div>
+                            <div class="flist" rel="flist">
+                                <label for="" class="fname"><span class="frequired" rel="frequired">*</span>手机号：</label>
+                                <input data-pass="0" type="text" placeholder="" class="ftext" name="mobile" id="mobile"
+                                    data-validator='{"required":{"value":true,"msg":"请输入手机号码"},"maxLength":{"value":11,"msg":"请输入正确的手机号"},"minLength":{"value":11,"msg":"请输入正确的手机号"},"number":{"value":true,"msg":"请输入正确的手机号"},"mobile":{"value":true,"msg":"请输入正确的手机号"}}'
+                                    data-error="">
+                                <p class="ferror" rel="ferror"></p>
+                            </div>
+                            <div class="flist" rel="flist">
+                                <label for="" class="fname"><span class="frequired"
+                                        rel="frequired">*</span>身份证号：</label>
+                                <input data-pass="0" type="text" placeholder="" id="card" name="card" class="ftext"
+                                    data-validator='{"required":{"value":true,"msg":"请输入身份证号"},"IDnumber":{"value":true,"msg":"请输入正确的身份证号"}}'
+                                    data-error="">
+                                <p class="ferror" rel="ferror"></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-blue btn-dis" id="btnStep3" rel="btn">确认报名</button>
+                    </div>
+                </form>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade modal-subscribe" tabindex="-1" role="dialog" id="popStep4">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="">报名成功</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="suc"></div>
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <div class="modal fade modal-subscribe" tabindex="-1" role="dialog" id="mprompt">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="">提示</h4>
+                </div>
+                <div class="modal-body" style="height: 100px;">
+                    <div class="info">
+                        <p>+data.info+</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- <div class="fixRight">
+        <ul>
+            <li>
+                <a href="/Active/notice.html" class="erweima"
+                    style="background: url(https://p0.ssl.qhimg.com/t015ec7a9a8cbc6a572.png) no-repeat center center;"></a>
+            </li>
+            <li>
+                <div class="meeting-toTop" style="position: static;" id="toTop"><a style="width: 20px;left: 15px;"
+                        href="###">返回顶部</a></div>
+            </li>
+            <!-- <li><a href="javascript:void(0);" class="yijianfankui"></a></li> -->
+    <!-- <li><a href="javascript:void(0);" class="returntop" style="display:none;"></a></li> -->
+    </ul>
+    </div> -->
+
+
+    <footer id="partner" name="partner">
+        <div class="ft-copyright">
+            <p><a href="https://www.butian.net">补天</a>| <a href="https://zhongce.butian.net">补天众测</a>|<a
+                    href="http://360.net">奇安信集团</a></p>
+            <p>Copyright©2018 补天 京ICP备16020626号-3</p>
+        </div>
+    </footer>
+    <!-- <script src="/Public/js/jquery-9.10.2.min.js?v=202004011404"></script>
+    <script type="text/javascript" src="/Public/js/config.js?v=202004011404"></script> -->
+
+    <!-- <script src="/Public/js/head.js?v=202004011404"></script>
+    <script src="/Public/js/plugins.js?v=202004011404"></script>
+    <script type="text/javascript">
+        jQuery(function ($) {
+            //$('#btnStep1').on('click',step1);
+            function step1() {
+                $('#popStep1').modal('hide');
+                $('#popStep2').modal('show');
+            }
+            //$('#btnStep2').on('click',step2);
+            function step2() {
+                var type = $('.role-box').find('a.cur').attr('cval');
+                if (type * 1 == 2) {
+                    $('#popStep2').modal('hide');
+                    $('#popStep3').modal('show');
+                }
+                if (type * 1 == 1) {
+                    $.ajax({
+                        url: "/Home/Active/save",
+                        type: "post",
+                        dataType: "json",
+                        data: { type: type },
+                        success: function (data) {
+                            if (data.status * 1 == 1) {
+                                $('#popStep2').modal('hide');
+                                $('#popStep4').modal('show');
+                                $('#waybtn').html('<a href="###">已报名</a><p>请在09月10日 00:00---09月16日 23:59在本页提交漏洞</p>');
+                            } else {
+                                $('#mprompt').modal({ ignoreBackdropClick: true, width: 500, mbody: '<div class="info"><p>' + data.info + '</p></div>' });
+                            }
+
+                        }
+                    });
+                }
+
+            }
+            //$('#btnStep3').on('click',step3);
+            function step3() {
+                var type = $('#popStep3').attr('cval');
+                var param = $('#fm').serializeJson();
+                param['type'] = type;
+                var tmpSch = [];
+                tmpSch = tmpSch.concat(param.school);
+                for (var i = 0; i < tmpSch.length; i++) {
+                    if (tmpSch[i] == '-1') {
+                        continue;
+                    } else {
+                        param['school'] = tmpSch[i];
+                    }
+                }
+                console.log(param);
+                $.ajax({
+                    url: "/Home/Active/save",
+                    type: "post",
+                    dataType: "json",
+                    data: param,
+                    success: function (data) {
+                        if (data.status * 1 == 1) {
+                            $('#popStep3').modal('hide');
+                            $('#popStep4').modal('show');
+                            $('#waybtn').html('<a href="###">已报名</a><p>请在09月10日 00:00---09月16日 23:59在本页提交漏洞</p>');
+                        } else {
+                            $('#mprompt').modal({ ignoreBackdropClick: true, width: 500, mbody: '<div class="info"><p>' + data.info + '</p></div>' });
+                        }
+
+                    }
+                });
+
+            }
+            $('#popStep1').on('shown.bs.modal', function () {
+                $('#argeeLabel').removeClass('fsel-seled');
+                $('#argee').get(0).checked = false;
+                $('#btnStep1').addClass('btn-dis').off('click.step1');
+                doCheck('#agreecheckbox', agreeCb);
+            });
+            $('#popStep1').on('hidden.bs.modal', function () {
+                $('#argeeLabel').removeClass('fsel-seled');
+                $('#argee').get(0).checked = false;
+                $('#btnStep1').addClass('btn-dis').off('click.step1');
+            });
+            function agreeCb(checked) {
+                if (checked) {
+                    console.log(2);
+                    $('#btnStep1').removeClass('btn-dis').off('click.step1').on('click.step1', step1);
+                } else {
+                    console.log(3);
+                    $('#btnStep1').addClass('btn-dis').off('click.step1');
+                }
+
+            };
+            $('#popStep2').on('shown.bs.modal', function () {
+                $('#popStep3').attr('cval', $('.role-box').find('a.cur').attr('cval'));
+                $('.role-box').find('a').removeClass('cur');
+                $('#btnStep2').addClass('btn-dis').off('click.step2');
+
+            });
+            $('#popStep2').on('hidden.bs.modal', function () {
+                $('#popStep3').attr('cval', $('.role-box').find('a.cur').attr('cval'));
+                $('.role-box').find('a').removeClass('cur');
+                $('#btnStep2').addClass('btn-dis').off('click.step2');
+            });
+            $('.role-box').find('a').on('click', function () {
+                if ($(this).hasClass('cur')) {
+                    $(this).removeClass('cur');
+                    $('#btnStep2').addClass('btn-dis').off('click.step2');
+                    return;
+                }
+                $('.role-box').find('a').removeClass('cur');
+                $(this).addClass('cur');
+                $('#btnStep2').removeClass('btn-dis').off('click.step2').on('click.step2', step2);
+            });
+
+            $('#popStep3').on('shown.bs.modal', function () {
+                $('#armyLabel1').addClass('fsel-seled');
+                $('#army1').get(0).checked = true;
+                $('#armyLabel2').removeClass('fsel-seled');
+                $('#army2').get(0).checked = false;
+                $('.select_container_nw').remove();
+                $('#selarmy1').val('-1');
+                $('#selarmy2').val('-1');
+                $('#selbox1').show();
+                $('#selbox2').hide();
+                $('.infos').find('input[type="text"]').val('');
+                $('#btnStep3').addClass('btn-dis').off('click.step3');
+                doCheck('#armytype', armyCb);
+                selinfo1();
+            });
+            $('#popStep3').on('hidden.bs.modal', function () {
+                $('#armyLabel1').addClass('fsel-seled');
+                $('#army1').get(0).checked = true;
+                $('#armyLabel2').removeClass('fsel-seled');
+                $('#army2').get(0).checked = false;
+                $('.select_container_nw').remove();
+                $('#selbox1').show();
+                $('#selbox2').hide();
+                $('.infos').find('input[type="text"]').val('');
+                $('#selarmy1').val('-1');
+                $('#selarmy2').val('-1');
+                $('#btnStep3').addClass('btn-dis').off('click.step3');
+            });
+            function armyCb(checked) {
+                var $t = $(this);
+                $('#selarmy1').val('-1');
+                $('#selarmy2').val('-1');
+                if ($t.attr('id') == 'armyLabel1' && checked) {
+                    $('#armyLabel2').removeClass('fsel-seled');
+                    $('#army2').get(0).checked = false;
+                    $('#selarmy1').closest('div').show();
+                    $('#selarmy2').closest('div').hide();
+                    selinfo1();
+                } else if ($t.attr('id') == 'armyLabel1' && !checked) {
+                    $('#armyLabel2').addClass('fsel-seled');
+                    $('#army2').get(0).checked = true;
+                    $('#selarmy1').closest('div').hide();
+                    $('#selarmy2').closest('div').show();
+
+                    selinfo2();
+                } else if ($t.attr('id') == 'armyLabel2' && checked) {
+                    $('#armyLabel1').removeClass('fsel-seled');
+                    $('#army1').get(0).checked = false;
+                    $('#selarmy2').closest('div').show();
+                    $('#selarmy1').closest('div').hide();
+                    selinfo2();
+                } else if ($t.attr('id') == 'armyLabel2' && !checked) {
+                    $('#armyLabel1').addClass('fsel-seled');
+                    $('#army1').get(0).checked = true;
+                    $('#selarmy2').closest('div').hide();
+                    $('#selarmy1').closest('div').show();
+                    selinfo1();
+                }
+            };
+
+
+            function selinfo1() {
+                $('.select_container_nw').remove();
+                $("#selarmy1").attr('data-pass', '0');
+                $("#selarmy2").attr('data-pass', '0');
+                $("#selarmy1").select({
+                    width: "303px",
+                    listMaxHeight: "160px",
+                    fontColor: '#0aecfe',
+                    curIndex: 0,
+                    //optionData:data,
+                    initCallback: function () {
+                    },
+                    callback: function () {
+                        var $t = $(this);
+                        var val = $t.attr('val');
+                        if (val == '-1') {
+                            $('#selarmy1').attr('data-pass', '0').closest('[rel="flist"]').find('[rel="ferror"]').html('请选择高校信息');
+                            $('#selarmy2').attr('data-pass', '0');
+                        } else {
+                            $('#selarmy1').attr('data-pass', '1').closest('[rel="flist"]').find('[rel="ferror"]').html('');
+                            $('#selarmy2').attr('data-pass', '1');
+                        }
+                        if ($('#selarmy1').closest('form').find('[data-pass="0"]').size() > 0) {
+                            $('#btnStep3').addClass('btn-dis').off('click.step3');
+                        } else {
+                            $('#btnStep3').removeClass('btn-dis').off('click.step3').on('click.step3', step3);
+                        }
+
+                    }
+                });
+
+
+                $('.select_container_nw').each(function (i) {
+                    $(this).css('z-index', 999 - i);
+                });
+
+            }
+            function selinfo2() {
+                $('.select_container_nw').remove();
+                $("#selarmy1").attr('data-pass', '0');
+                $("#selarmy2").attr('data-pass', '0');
+                $("#selarmy2").select({
+                    width: "303px",
+                    listMaxHeight: "160px",
+                    fontColor: '#0aecfe',
+                    curIndex: 0,
+                    //optionData:data,
+                    initCallback: function () {
+                    },
+                    callback: function () {
+                        var $t = $(this);
+                        var val = $t.attr('val');
+                        if (val == '-1') {
+                            $('#selarmy2').attr('data-pass', '0').closest('[rel="flist"]').find('[rel="ferror"]').html('请选择单位信息');
+                            $('#selarmy1').attr('data-pass', '0');
+                        } else {
+                            $('#selarmy2').attr('data-pass', '1').closest('[rel="flist"]').find('[rel="ferror"]').html('');
+                            $('#selarmy1').attr('data-pass', '1');
+                        }
+                        if ($('#selarmy2').closest('form').find('[data-pass="0"]').size() > 0) {
+                            $('#btnStep3').addClass('btn-dis');
+                        } else {
+                            $('#btnStep3').removeClass('btn-dis');
+                        }
+
+                    }
+                });
+
+                $('.select_container_nw').each(function (i) {
+                    $(this).css('z-index', 999 - i);
+                });
+
+            }
+
+
+            //导航
+            $('#topNav').find('a').on({
+                'click': function () {
+                    $(this).addClass('cur').closest('li').siblings().find('a').removeClass('cur');
+                }
+            });
+
+            //返回顶部
+            var timer = null;
+            $('#toTop').on('click', function () {
+                cancelAnimationFrame(timer);
+                timer = requestAnimationFrame(function fn() {
+                    var oTop = document.body.scrollTop || document.documentElement.scrollTop;
+                    if (oTop > 0) {
+                        document.body.scrollTop = document.documentElement.scrollTop = oTop - 50;
+                        timer = requestAnimationFrame(fn);
+                    } else {
+                        cancelAnimationFrame(timer);
+                    }
+                });
+            });
+            $(window).on('scroll', function () {
+                var oTop = document.body.scrollTop || document.documentElement.scrollTop,
+                    oH = $(document.body).height();
+                if (oTop >= oH) {
+                    $('#toTop').show();
+                } else {
+                    $('#toTop').hide();
+                }
+            });
+
+
+
+
+            //多选框
+            function doCheck(t, callback) {
+                console.log(1);
+                var $t = $(t);
+                $t.find('.fsel').off('click.sel').not('.fsel-seled-dis').on('click.sel', function () {
+                    var $this = $(this);
+                    var checked = $this.find('input').get(0).checked;
+                    //$this.find('input').get(0).checked=!$this.find('input').get(0).checked;
+
+                    if (checked) {
+                        $this.addClass('fsel-seled');
+                    } else {
+                        $this.removeClass('fsel-seled');
+                    }
+                    if (callback && $.type(callback) == 'function') {
+                        callback.call($this, checked);
+                    }
+                });
+            }
+            //验证input
+            chvalidator();
+            function chvalidator() {
+                $('[data-validator]').on('mouseover', function () {
+                    var $this = $(this);
+                    var x = $this.position().left + $(this).outerWidth() + 10 || 0, txt = $(this).attr('placeholder'), val = $.trim($this.val());
+                    $this.removeClass('ftext-blur').addClass('ftext-hover').closest('[rel="flist"]').find('[rel="fprompt"]').addClass('fprompt-hover').css('left', x + 5);
+                }).on('mouseleave', function () {
+                    $(this).removeClass('ftext-hover').closest('[rel="flist"]').find('[rel="fprompt"]').removeClass('fprompt-hover');
+                }).on('focus', function () {
+                    $(this).removeClass('ftext-hover').closest('[rel="flist"]').find('[rel="fprompt"]').removeClass('fprompt-hover');
+                }).on('blur keyup change', function () {
+                    inputBlur.call(this);
+                });
+            }
+            function inputBlur() {
+                var $this = $(this);
+                $this.removeClass('ftext-hover').closest('[rel="flist"]').find('[rel="fprompt"]').removeClass('fprompt-hover');
+                var errorTxt = $this.attr('data-error');
+                if (errorTxt.length == 0) {
+                    var va = $this.attr('data-validator'), val = $this.val();
+                    var o = JSON.parse(va);
+
+                    if (!('hasSpace' in o)) {
+                        val = $.trim(val);
+                    }
+                    for (var k in o) {
+                        if (!validator[k](val, o[k].value)) {
+                            $this.attr('data-error', o[k].msg);
+                            break;
+                        }
+                    }
+                    errorTxt = $.trim($this.attr('data-error'));
+                }
+
+
+
+                if (errorTxt.length > 0) {
+                    $this.addClass('ftext-blur').closest('[rel="flist"]').find('[rel="ferror"]').html(errorTxt);
+                    $this.attr('data-pass', '0');
+                } else {
+                    $this.removeClass('ftext-blur').closest('[rel="flist"]').find('[rel="ferror"]').html('');
+                    $this.attr('data-pass', '1');
+                }
+                $this.attr('data-error', '');
+
+
+                if ($this.closest('form').find('[data-pass="0"]').size() > 0) {
+                    $this.closest('form').find('[rel="btn"]').addClass('btn-dis').off('click.step3');
+                } else {
+                    $this.closest('form').find('[rel="btn"]').removeClass('btn-dis').off('click.step3').on('click.step3', step3);
+                }
+            }
+
+        });
+    </script> -->
+</body>
+
+</html>

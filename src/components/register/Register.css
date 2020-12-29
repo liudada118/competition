@@ -1,0 +1,225 @@
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    background-color: #091022;
+    font-family: 'Source Sans Pro';
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #777
+}
+
+a:active,
+a:hover {
+    outline: none;
+}
+
+img {
+    vertical-align: middle;
+    display: inline-block;
+    border: none;
+}
+
+/* 背景图 */
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.bg img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 抬头 */
+.register-title{
+    position: absolute;
+    top: 1.851852rem;
+    width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #19eac8, #2eb3e4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: .888889rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px #19eac8, 0 0 1px #2bcadb, 0 0 2px #2eb3e4;
+    font-family: serif;
+    font-weight: bolder;
+}
+
+/* 注册框 */
+.register {
+    position: absolute;
+    width: 290px;
+    height: 370px;
+    top: 1.111111rem;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    font-size: 14px;
+    padding: 50px 40px 40px 40px;
+    box-shadow: -15px 15px 15px rgba(6, 17, 47, 0.7);
+    /* Old browsers */
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #35394a), color-stop(100%, rgb(0, 0, 0)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(230deg, rgba(53, 57, 74, 0) 0%, rgb(0, 0, 0) 100%);
+    /* Chrome10+,Safari5.1+ */
+    /* Opera 11.10+ */
+    /* IE10+ */
+    background: linear-gradient(230deg, rgba(53, 57, 74, 0) 0%, rgb(0, 0, 0) 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(53, 57, 74, 0)', endColorstr='rgb(0, 0, 0)', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.register .validation {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    width: 60px;
+    height: 30px;
+}
+
+.register .validation img {
+    width: 100%;
+    height: 100%;
+}
+
+.register .forget-back {
+    position: absolute;
+    bottom: 20px;
+    left: 35px;
+    width: 250px;
+    /* font-size: 12px; */
+}
+
+.register .forget-back a:hover {
+    cursor: pointer;
+}
+
+.register_title {
+    color: #D3D7F7;
+    height: 60px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.register-fields {
+    height: 170px;
+    position: absolute;
+    left: 0;
+}
+
+.register-fields .icon {
+    position: absolute;
+    z-index: 1;
+    left: 36px;
+    top: 8px;
+    opacity: .5;
+}
+
+.register-fields input[type='password'],
+.register-fields input[type='text'] {
+    color: #61BFFF !important;
+}
+
+.register-fields input[type='text'],
+.register-fields input[type='password'] {
+    color: #afb1be;
+    margin-top: -2px;
+    background: rgba(57, 61, 82, 0);
+    left: 0;
+    padding: 10px 65px;
+    border-top: 2px solid rgba(57, 61, 82, 0);
+    border-bottom: 2px solid rgba(57, 61, 82, 0);
+    border-right: none;
+    border-left: none;
+    outline: none;
+    font-family: 'Gudea', sans-serif;
+    box-shadow: none;
+}
+
+.register-fields_user,
+.register-fields_password {
+    position: relative;
+}
+
+.register-fields_submit {
+    position: relative;
+    top: 17px;
+    left: 0;
+    width: 80%;
+    right: 0;
+    margin: auto;
+}
+
+.register-fields_submit input {
+    border-radius: 50px;
+    background: transparent;
+    padding: 10px 50px;
+    border: 2px solid #4FA1D9;
+    color: #4FA1D9;
+    text-transform: uppercase;
+    font-size: 11px;
+    -webkit-transition-property: background, color;
+    transition-property: background, color;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+}
+
+.register-fields_submit input:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.register-fields_submit input:hover {
+    color: white;
+    background: #4FA1D9;
+    cursor: pointer;
+    -webkit-transition-property: background, color;
+    transition-property: background, color;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+}
+
+.register-disclaimer  {
+    /* margin-top: 3.888889rem; */
+    z-index: 1000;
+    position: absolute;
+    bottom: .37037rem;
+    right: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 900px) {
+    .register-title {
+        /* margin-right: 1.851852rem;
+    margin-left: 1.851852rem; */
+    font-size: .555556rem;
+  }
+  
+  }
+  
+  @media screen and (max-width: 600px) {
+    .register-title {
+        /* margin-right: .740741rem;
+    margin-left: .740741rem; */
+    font-size: 20px;
+    text-shadow: 0px 0px 0px #19eac8, 0 0 0px #2bcadb, 0 0 0px #2eb3e4;	
+    }
+  }

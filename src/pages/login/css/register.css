@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    font-size: 16px;
+    font-family: 'Source Sans Pro';
+    background: #091022 url(../img/bg.jpg) no-repeat center -80px;
+    background-size: 100%;
+}
+
+/* 登录框 */
+.register {
+    box-shadow: -15px 15px 15px rgba(6, 17, 47, 0.7);
+    opacity: 1;
+    top: 20px;
+    -webkit-transition-property: -webkit-transform, opacity, box-shadow, top, left;
+    transition-property: transform, opacity, box-shadow, top, left;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+    -webkit-transform-origin: 161px 100%;
+    -ms-transform-origin: 161px 100%;
+    transform-origin: 161px 100%;
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    position: relative;
+    width: 240px;
+    height: 320px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    padding: 50px 40px 40px 40px;
+    background: #35394a;
+    /* Old browsers */
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #35394a), color-stop(100%, rgb(0, 0, 0)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(230deg, rgba(53, 57, 74, 0) 0%, rgb(0, 0, 0) 100%);
+    /* Chrome10+,Safari5.1+ */
+    /* Opera 11.10+ */
+    /* IE10+ */
+    background: linear-gradient(230deg, rgba(53, 57, 74, 0) 0%, rgb(0, 0, 0) 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(53, 57, 74, 0)', endColorstr='rgb(0, 0, 0)', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+.register .validation {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    width: 60px;
+    height: 30px;
+}
+
+.register .validation img {
+    width: 100%;
+    height: 100%;
+}
+
+.register .disclaimer {
+    position: absolute;
+    bottom: 20px;
+    left: 35px;
+    width: 250px;
+    font-size: 12px;
+}
+
+.register .disclaimer a:hover {
+    cursor: pointer;
+}
+
+.register_title {
+    color: #D3D7F7;
+    height: 60px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.register-fields {
+    height: 208px;
+    position: absolute;
+    left: 0;
+}
+
+.register-fields .icon {
+    position: absolute;
+    z-index: 1;
+    left: 36px;
+    top: 8px;
+    opacity: .5;
+}
+
+.register-fields input[type='password'],
+.register-fields input[type='text'] {
+    color: #61BFFF !important;
+}
+
+.register-fields input[type='text'],
+.register-fields input[type='password'] {
+    color: #afb1be;
+    width: 190px;
+    margin-top: -2px;
+    background: rgba(57, 61, 82, 0);
+    left: 0;
+    padding: 10px 65px;
+    border-top: 2px solid rgba(57, 61, 82, 0);
+    border-bottom: 2px solid rgba(57, 61, 82, 0);
+    border-right: none;
+    border-left: none;
+    outline: none;
+    font-family: 'Gudea', sans-serif;
+    box-shadow: none;
+}
+
+.register-fields_user,
+.register-fields_password {
+    position: relative;
+}
+
+.register-fields_submit {
+    position: relative;
+    top: 17px;
+    left: 0;
+    width: 80%;
+    right: 0;
+    margin: auto;
+}
+
+.register-fields_submit input {
+    border-radius: 50px;
+    background: transparent;
+    padding: 10px 50px;
+    border: 2px solid #4FA1D9;
+    color: #4FA1D9;
+    text-transform: uppercase;
+    font-size: 11px;
+    -webkit-transition-property: background, color;
+    transition-property: background, color;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+}
+
+.register-fields_submit input:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.register-fields_submit input:hover {
+    color: white;
+    background: #4FA1D9;
+    cursor: pointer;
+    -webkit-transition-property: background, color;
+    transition-property: background, color;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+}
+
+/* 验证登录中…… */
+.authent {
+    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+    display: none;
+    /* Old browsers */
+    /* FF3.6+ */
+    background: #35394a;
+    /* Chrome10+,Safari5.1+ */
+    /* Opera 11.10+ */
+    /* IE10+ */
+    background: linear-gradient(230deg, rgba(53, 57, 74, 0) 0%, rgb(0, 0, 0) 100%);
+    /* IE6-9 fallback on horizontal gradient */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(53, 57, 74, 0)', endColorstr='rgb(0, 0, 0)', GradientType=1);
+    position: absolute;
+    left: 0;
+    right: 90px;
+    margin: auto;
+    width: 100px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 20px 70px;
+    top: 200px;
+    bottom: 0;
+    height: 70px;
+    opacity: 0;
+}
+
+.authent .loader {
+    height: 44px;
+    width: 44px;
+    margin-left: 28px;
+}
+
+.authent p {
+    text-align: center;
+    color: white;
+}
+
+/* 登录成功提示 */
+.success {
+    display: none;
+    color: #d5d8e2;
+}
+
+.success p {
+    font-size: 14px;
+}
+
+/* 登录左移动特效 */
+.testtwo {
+    left: -320px !important;
+}
+
+.test {
+    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+    pointer-events: none;
+    top: -100px !important;
+    -webkit-transform: rotateX(70deg) scale(0.8) !important;
+    transform: rotateX(70deg) scale(0.8) !important;
+    opacity: .6 !important;
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+}

@@ -1,0 +1,185 @@
+body {
+	background: #091022 url('../../assets/bg.jpg') no-repeat center 60px;
+}
+
+header {
+	overflow: visible;
+}
+
+.logo {
+	padding-top: 15px;
+}
+
+
+.top {
+	display: block;
+	margin: 0 auto;
+	overflow: visible;
+}
+
+.top-nav {
+	overflow: visible;
+    width: 800px;
+    float: left;
+}
+
+.top-nav .info {
+	float: right;
+}
+
+.top-nav .info a {
+	font-size: 14px;
+	border-bottom: none;
+}
+.top-nav li {
+	padding: 0 14px;
+}
+
+.top-nav li.new {
+	background: url(https://p0.ssl.qhimg.com/t012169fb3d48dc94c2.png) no-repeat 74px 16px;
+}
+.top-nav .info a:hover {
+	text-decoration: underline;
+}
+
+.loginSeting {
+	width: 100px;
+}
+
+.meeting-intro {
+	height: 540px;
+}
+
+.meeting-intro-con {
+	background: url('https://p0.ssl.qhimg.com/t019a46276567fdf625.png') no-repeat center top;
+	height: 261px;
+}
+
+.meeting-intro-con p {
+	font-size: 18px;
+	line-height: 36px;
+	text-align: left;
+}
+
+.game-way p {
+	text-align: left;
+	padding-top: 12px;
+	text-indent: 0;
+	font-size: 18px;
+	color: #e2d79d;
+	line-height: 35px;
+}
+
+.banner {
+	height: 440px;
+	position: relative;
+}
+
+.banner .bgtext {
+	position: absolute;
+    top: 150px;
+    width: 100%;
+    /* border: 1px solid #ccc; */
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #19eac8 , #2eb3e4 );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 48px;
+    text-align: center;
+    text-shadow: 1px 1px 2px #19eac8, 0 0 1px #2bcadb, 0 0 2px #2eb3e4;
+    font-family: serif;
+    font-weight: bolder;    
+}
+
+.game-way-btn {
+	height: 64px;
+	text-align: center;
+	padding: 20px 30px 60px;
+}
+
+.game-way-btn a {
+	margin: 0 auto;
+	display: block;
+	width: 421px;
+	height: 64px;
+	line-height: 64px;
+	color: #000;
+	font-size: 32px;
+	font-weight: bold;
+	background: url(https://p0.ssl.qhimg.com/t01b6ad91f48d5c5ef3.png) no-repeat center center;
+}
+
+.meeting-schdule-main {
+	height: 657px;
+	background: url(https://p0.ssl.qhimg.com/t017c11d01bd9be0a71.png) no-repeat center 0;
+}
+
+.meeting-schdule-main p {
+	font-size: 18px;
+    line-height: 28px;
+    padding: 92px 50px 50px 146px;
+    color: #e2d79d;
+    text-indent: 0;
+    text-align: left;
+}
+
+.meeting-time {
+	height: 268px;
+	text-align: center;
+	padding-top: 0;
+	background: none;
+}
+
+.meeting-highlights-con {
+	height: 916px;
+	text-align: center;
+	padding-top: 0;
+	background: none;
+}
+
+.meeting-partner {
+	width: 1200px;
+	margin: 0 auto;
+	background: url('https://p0.ssl.qhimg.com/t0181b0cb100fbb3503.png') no-repeat center 0;
+}
+
+.meeting-partner-con {
+	background: url('https://p0.ssl.qhimg.com/t01bec9a0c5811252a3.png') no-repeat right bottom;
+}
+
+.meeting-guide-con {
+	height: 300px;
+}
+
+.meeting-guide-else p {
+	text-align: center;
+	height: 47px;
+	color: #fff;
+	font-size: 18px;
+	line-height: 36px;
+}
+
+.meeting-guide-else p span {
+	display: inline-block;
+	height: 47px;
+	padding-left: 60px;
+	background: url(https://p0.ssl.qhimg.com/t01bcdf51ccde3c3447.png) no-repeat 0 0;
+}
+
+.meeting-guide-wrap {
+	background-position: 0 -180px;
+}
+
+.fixRight .meeting-toTop {
+	position: static; display: block;
+}
+.fixRight .meeting-toTop .atoTop {
+	width: 20px;
+	left: 15px;
+}
+
+footer {
+	height: 100px;
+	padding: 20px 0;
+}

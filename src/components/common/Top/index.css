@@ -1,0 +1,85 @@
+.header{background: rgba(0,0,0,.4);height:75px;box-shadow:0 0 2px rgba(255,255,255,.4);position: fixed;top:0;right:0;left:0;z-index: 1001}
+.header2{background: rgba(0,0,0,0.8)}
+.headerBox{width: 1200px;margin: 0 auto;position: relative;}
+.logo{float:left;padding:17px 30px 0 0;margin:0;line-height: normal;}
+.nav{float: left;}
+.nav li{float: left;position: relative;height:75px;}
+.nav li a{padding:0 5px;display:block;height:40px;line-height:38px;color: #fff;margin-top:19px;font-size: 14px;}
+.nav li.new {background: url('https://p0.ssl.qhimg.com/t013a2c6c46812b4f50.png') no-repeat right 18px;}
+.nav li a:hover{background: url(https://p0.ssl.qhimg.com/t0178f030c7d68c0256.png) center bottom no-repeat;background-size: 100% 2px;}
+.headerBox .nav>li>a:hover,.headerBox .nav>li>a:focus{background-color: transparent;}
+.nav li.new{background: url('https://p0.ssl.qhimg.com/t013a2c6c46812b4f50.png') no-repeat right 18px;}
+.navTools{float: right;position: absolute;top:0;right: 0;}
+.navTools li{
+    float:left;
+    margin-left:10px;
+    height:36px;
+    margin-top:19px;
+    line-height:36px;
+    margin-right: 60px;
+}
+.navTools li a{
+    color: #fff;
+    border:none;
+    font-size:13px;
+}
+
+.navTools li span{
+    color: #fff;
+    border:none;
+    font-size:13px;
+    /* margin-right: 28px; */
+    margin-top: -35px;
+}
+#showPersonalCenter{
+	margin-right: .092593rem;
+}
+header{
+	width:1200px;
+	margin:0 auto;
+	background: #000;
+	width:100%;
+	margin:0 auto;
+	height:67px;
+	line-height:67px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	overflow: hidden;
+	text-align: center;
+}
+.top{
+	width:1200px;
+	height:67px;
+	overflow: hidden;
+	display: inline-block;
+}
+.logo{
+	float:left;
+	width:190px;
+	height:67px;
+	padding-left:
+	20px;
+}
+.logo img
+{
+    vertical-align: middle;
+    width: 100%;
+}
+/* .top-nav{} */
+.top-nav li{
+	float: left;
+	padding: 0 20px;
+}
+.top-nav li a{
+	font-size:18px;
+	color:#fff;
+	display: inline-block;
+	height:65px;
+	border-bottom: 2px solid #000;
+}
+.top-nav li a:hover,.top-nav li a.cur{
+	color:#2cf5bf;
+	border-color:#2cf5bf;
+}

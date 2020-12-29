@@ -1,0 +1,325 @@
+.person-content {
+    border: .018519rem solid #18bccd;
+    background-color: rgba(20, 48, 61, 0.7);
+    color: #fff;
+    border-radius: .092593rem;
+    margin-bottom: .37037rem;
+}
+
+.personal {
+    background-color: #091022;
+}
+.personal form{
+    display: flex;
+    flex-flow: column;
+}
+
+.personal-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.personal-bg img {
+    width: 100%;
+    height: 100%;
+}
+
+.person-content_info {
+    border-bottom: 1px solid #18bccd;
+}
+
+.person-content {
+    margin-right: 3.703704rem;
+    margin-left: 3.703704rem;
+    position: relative;
+    display: flex;
+    /* margin-top: 16rem; */
+    flex-flow: column;
+}
+
+.person-content_title {
+    display: inline-block;
+    font-size: .37037rem;
+    padding-left: .185185rem;
+    padding-top: .185185rem;
+    padding-bottom: .185185rem;
+    color: #fff;
+}
+
+.person-content label {
+    color: #fff;
+}
+
+.person-content_title h2 {
+    padding-top: .185185rem;
+    padding-left: .185185rem;
+    color: #fff;
+}
+
+.person-content_edit {
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+    width: 1.111111rem;
+    height: .555556rem;
+    background-color: #18bccd;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.person-content_key {
+    text-align: center;
+    padding-top: .277778rem;
+    padding-bottom: .277778rem;
+    font-size: .296296rem;
+}
+
+.person-content_key .ant-col-8 {
+    text-align: right;
+}
+
+.person-content_key .ant-col-8::before {
+    display: inline-block;
+    margin-right: 4px;
+    color: #ff4d4f;
+    font-size: 14px;
+    font-family: SimSun, sans-serif;
+    line-height: 1;
+    content: '*';
+}
+
+.person-content_key .ant-col-8::after {
+    content: ':';
+    position: relative;
+    top: -.5px;
+    margin: 0 8px 0 2px;
+}
+
+.person-content_key .ant-col-16 {
+    text-align: left;
+}
+
+.person-content_text .ant-col-16 {
+    text-align: center;
+}
+
+.person-content_text .ant-col-16 #phone::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.person-content_text .ant-col-16 #idNumber::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.person-content_key input {
+    border: .037037rem solid #18bccd;
+    border-radius: .037037rem;
+    width: 60%;
+    color: #18bccd;
+}
+
+.person-content_key option {
+    background-color: #18bccd;
+}
+
+.person-content_text {
+    border-bottom: .018519rem solid #555;
+    text-align: left;
+}
+
+.person-content_edit {
+    font-size: .333333rem;
+}
+
+.person-content_subBotton {
+    background-color: #18bccd;
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent;
+    outline: none;
+    margin-right: 1.851852rem;
+    height: .47037rem;
+    width: 1.481481rem;
+    color: #000;
+    cursor: pointer;
+    border-radius: .037037rem;
+}
+
+.person-content_button .failSubmit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #18bccd;
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent;
+    outline: none;
+    margin-right: 1.851852rem;
+    height: .47037rem;
+    width: 1.481481rem;
+    color: #000;
+    cursor: pointer;
+}
+
+.person-content_button {
+    z-index: 3;
+    padding-top: .185185rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: .185185rem;
+}
+
+.person-content_resBotton {
+    width: 1.481481rem;
+    height: .47037rem;
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent;
+    outline: none;
+    color: #18bccd;
+    cursor: pointer;
+    border-radius: .037037rem;
+}
+
+.person-content #register {
+    padding-top: .37037rem;
+}
+
+.person-content_schoolLabel::before {
+    display: inline-block;
+    margin-right: 4px;
+    color: #ff4d4f;
+    font-size: 14px;
+    font-family: SimSun, sans-serif;
+    line-height: 1;
+    content: '*';
+}
+
+.person-content_schoolInput {
+    display: inline-block;
+    margin-bottom: .444444rem;
+    width: 12.62963rem;
+}
+
+.person-content_schoolInput input {
+    width: 3.333333rem;
+    padding: .074074rem .203704rem;
+}
+
+.member-infos {
+    display: flex;
+    /* flex-flow: column; */
+    flex-wrap: wrap;
+    border-bottom: .018519rem solid #555;
+}
+
+.member-info {
+    flex: 0 0 16.6%;
+    padding-top: .185185rem;
+    padding-bottom: .185185rem;
+    text-align: center;
+}
+
+.member-info input {
+    border: .037037rem solid #18bccd;
+    border-radius: .037037rem;
+    width: 90%;
+    color: #18bccd;
+}
+
+.member-label::before {
+    display: inline-block;
+    margin-right: 4px;
+    color: #ff4d4f;
+    font-size: 14px;
+    font-family: SimSun, sans-serif;
+    line-height: 1;
+    content: '*';
+}
+
+.memberDel {
+    position: relative;
+    font-size: .259259rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.member-del_botton {
+    /* position: absolute; */
+    width: 1.111111rem;
+    height: .462963rem;
+    background-color: #18bccd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .037037rem;
+    cursor: pointer;
+    bottom: .185185rem;
+}
+
+.memberUnDel .member-del_botton {
+    width: 1.111111rem;
+    height: .462963rem;
+    background-color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .037037rem;
+}
+
+.person-content_memberTitle {
+    font-size: .259259rem;
+    background-color: #18bccd;
+    color: black;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.person-content_memberTitle div{
+    color: #fff;
+    padding: .092593rem;
+}
+
+@media screen and (min-width: 1500px) {
+    .person-content {
+        margin-right: 5.555556rem;
+        margin-left: 5.555556rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .person-content {
+        margin-right: 1.851852rem;
+        margin-left: 1.851852rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .person-content {
+        margin-right: 1.851852rem;
+        margin-left: 1.851852rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .person-content {
+        margin-right: .740741rem;
+        margin-left: .740741rem;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .person-content_edit {
+       width: 40px !important;
+       height: 20px !important;
+    }
+}

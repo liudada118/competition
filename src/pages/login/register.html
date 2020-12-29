@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>江西省网络安全技能大赛</title>
+    <link type="text/css" rel="stylesheet" href="css/register.css" />
+    <link type="text/css" rel="stylesheet" href="css/loaders.css" />
+    <link type="text/css" rel="stylesheet" href="layui/css/layui.css" />
+</head>
+
+<body>
+    <div class="register">
+        <div class="register_title">
+            <span>用户注册</span>
+        </div>
+        <form action="#" method="" onsubmit="return check()" name="form">
+            <div class="register-fields">
+                <div class="register-fields_user">
+                    <div class="icon">
+                        <img src="img/user_icon_copy.png">
+                    </div>
+                    <input type="text" name="register_name" id="register_name" placeholder="邮箱注册" autocomplete="off"
+                        autofocus />
+                </div>
+                <div class="register-fields_password">
+                    <div class="icon">
+                        <img src="img/lock_icon_copy.png">
+                    </div>
+                    <input type="password" name="password" id="password" placeholder="密码" autocomplete="off" />
+                </div>
+                <div class="register-fields_password">
+                    <div class="icon">
+                        <img src="img/lock_icon_copy.png">
+                    </div>
+                    <input type="password" name="repassword" id="repassword" placeholder="确认密码" autocomplete="off" />
+                </div>
+                <div class="register-fields_password">
+                    <div class="icon">
+                        <img src="img/key.png">
+                    </div>
+                    <input type="text" name="valicode" id="valicode" placeholder="验证码" autocomplete="off" />
+                    <div class=" validation">
+                        <a href="">
+                            <img src="http://192.168.1.103/user/createValicode" alt="点击刷新">
+                        </a>
+                    </div>
+                </div>
+                <div class="register-fields_submit">
+                    <input type="submit" value="注册" onclick="register()">
+                </div>
+            </div>
+        </form>
+        <div class="success"></div>
+        <div class="disclaimer">
+            <a href="#">忘记密码？</a>||
+            <a href="login.html">登录</a>||
+            <a href="../index/index.html">返回</a>
+        </div>
+    </div>
+    <div class="authent">
+        <div class="loader">
+            <div class="ball-clip-rotate-multiple">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <p>验证登录中...</p>
+    </div>
+    <div class="OverWindows"></div>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/stopExecutionOnTimeout.js?t=1"></script>
+    <script type="text/javascript" src="layui/layui.js"></script>
+    <script type="text/javascript" src="js/particleground.js"></script>
+    <script type="text/javascript" src="js/treatment.js"></script>
+    <script type="text/javascript" src="js/jquery.mockjax.js"></script>
+    <script src="js/vali_register.js"></script>
+
+    <script>
+        function register() {
+            $.ajax('',{
+                type: 'POST',
+                contentType: 'application/json',
+                data: {
+                    realname: $('#register_name').val(),
+                    password: $('#password').val(),
+                    repassword: $('#repassword').val()
+                },
+                complete: function (res) {
+                    console.log(res);
+                    if (res) { 
+                        window.location.href = "./login.html"
+                    }
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>

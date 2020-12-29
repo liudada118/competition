@@ -1,0 +1,14 @@
+.person-setting_tile{
+    font-size: .37037rem;
+    border-bottom: .018519rem solid #555;
+    
+}
+.person-setting_tile h2{
+    color: #FFF;
+}
+.preson-setting_sub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: .37037rem;
+}

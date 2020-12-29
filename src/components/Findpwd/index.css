@@ -1,0 +1,116 @@
+.findPwd-content-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    width: 100%;
+    z-index: 11;
+}
+
+.findPwd-content {
+    /* background-color: #091022; */
+    display: flex;
+    height: 90vh;
+}
+
+.findPwd-content_name {
+    color: #18bccd;
+    text-align: center;
+    font-size: .555556rem;
+    border-bottom: .018519rem solid #18bccd;
+    padding: .185185rem 0;
+    width: 100%;
+
+}
+
+.findPwd-content_keys {
+    width: 100%;
+    color: black;
+    text-align: center;
+    display: flex;
+    padding: 0 10%;
+    padding: .37037rem 0;
+}
+
+.findPwd-content_key {
+    flex: 0 0 25%;
+    font-size: .444444rem;
+    background-color: #fff;
+}
+
+.findPwd-content_highLight {
+    background-color: #18bccd;
+}
+
+.findPwd-content_stepContent {
+    margin-top: .462963rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    width: 50%;
+    height: 5.555556rem;
+    border: .018519rem solid #18bccd;
+}
+
+.findPwd-content_stepContent input {
+    width: 100%;
+    height: .555556rem;
+    border: solid .018519rem #18bccd;
+    border-radius: .074074rem;
+}
+
+.findPwd-text {
+    padding: .185185rem 0;
+    color: #18bccd;
+    width: 60%;
+}
+
+.stepContent_button {
+    background-color: #18bccd;
+    color: #fff;
+    width: 1.111111rem;
+    height: .37037rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.findPwd-content_stepContent .pass-changepsd {
+    color: #18bccd;
+}
+
+.stepContent_verification {
+    display: flex;
+}
+
+.findPwd-validation {
+    width: 1.388889rem;
+    height: .555556rem;
+    padding-left: .185185rem;
+}
+
+.findPwd-validation img {
+    width: 100%;
+    height: 100%;
+}
+
+.findPwd-validation a {
+    color: #999;
+}
+
+.findPwd-content_bg {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.findPwd-content_bg img {
+    width: 100%;
+    height: 100%;
+}
+.findPwd-content_stepContent a{
+    color: #fff;
+    text-decoration: underline;
+}

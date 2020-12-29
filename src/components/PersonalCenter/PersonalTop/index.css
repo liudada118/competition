@@ -1,0 +1,55 @@
+.person-top{
+    width: 100%;
+    height: 4.074074rem;
+    display: flex;
+    justify-content: center;
+}
+.person-top_bgImg{
+    width: 100%;
+    height: 5.555556rem;
+    position: absolute;
+    top: 0; 
+}
+.hasTeam{
+    font-size: .333333rem;
+}
+.person-top_bgImg img{
+    width: 100%;
+    height: 5.555556rem;
+}
+.person-top_info{
+    z-index: 3;
+    color: #fff;
+}
+.person-top_info p a{
+    color: lightsalmon;
+}
+.person-top_personImg{
+    width: 100%;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.person-top_personImg img{
+    width: 1.851852rem;
+    border-radius: .925926rem;
+    border: .018519rem solid #18bccd;
+}
+.person-top_welcome{
+    color: #fff;
+    font-size: .37037rem;
+    text-align: center;
+}
+.person-top_seletor{
+    /* padding-top: 1.111111rem; */
+    width: 100%;
+    text-align: center;
+}
+.person-top_seletor span{
+    margin-right: .37037rem;
+    margin-left: .37037rem;
+    cursor: pointer;
+}
+.highLight{
+    border-bottom: 1px solid #b59644;
+}

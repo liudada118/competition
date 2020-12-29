@@ -1,0 +1,329 @@
+.createTeam-content{
+    border: .018519rem solid #18bccd;
+    background-color: rgba(20, 48, 61, 0.7);
+    color: #fff;
+    border-radius: .092593rem;
+}
+.createTeam{
+    /* width: 100vw; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    flex-flow: column;
+    overflow: hidden;
+}
+.createTeam-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.createTeam-bg img{
+    width: 100%;
+    min-height: 100%;
+}
+.createTeam-protocol{
+   
+    position: absolute;
+    background-color: rgba(20, 48, 61, 0.9);
+    color: sandybrown;
+    width: 100% ;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    flex-flow: column;
+    overflow: hidden;
+}
+.createTeam-protocol_info{
+    border: .018519rem solid sandybrown ;
+    position: relative;
+    width: 50%;
+    height: 50%;
+}
+.createTeam-protocol .createTeam-protocol_yesOrNo{
+    position: absolute;
+    right: 40%;
+    bottom: 0;
+}
+.createTeam-protocol_yesOrNo div{
+    display: inline-block;
+    margin-right: .37037rem;
+    padding: .074074rem .185185rem;
+    background-color: #18bccd;
+    color: #000;
+    border-radius: .074074rem;
+}.createTeam-content_protocolName{
+    padding-left: .074074rem;
+    color: sandybrown;
+}
+.createTeam-content{    
+    /* width: 100%; */
+    margin-right: 3.703704rem;
+    margin-left:3.703704rem;
+    position: relative;
+    display: flex;
+    /* margin-top: 16rem; */
+    flex-flow: column;
+    margin-bottom: .37037rem;
+}
+.createTeam-content_bigTitle{
+    padding-bottom: .185185rem;
+    padding-top: .185185rem;
+    /* border: solid .018519rem #18bccd; */
+    top: 1.111111rem;
+    /* position: absolute; */
+    /* top: 67px; */
+    color: #18bccd;
+    font-size: .37037rem;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+}
+.createTeam-content_bigTitle h2{
+    color: #18bccd;
+}
+.createTeam-content_title{
+    display: inline-block;
+    font-size: .37037rem;
+    
+}
+.createTeam-content label{
+    color: #fff;
+}
+.createTeam-content_title h2{
+    padding-left: .185185rem;
+    padding-top: .185185rem;
+    color: #fff;
+}
+.createTeam-content_edit{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+.createTeam-content_key{
+    text-align: center;
+    padding-top: .277778rem;
+    padding-bottom: .277778rem;
+    font-size: .296296rem;
+}
+.createTeam-content_key .ant-col-8{
+    text-align: right;
+}
+.createTeam-content_key .ant-col-8::before {
+    display: inline-block;
+    margin-right: 4px;
+    color: #ff4d4f;
+    font-size: 14px;
+    font-family: SimSun, sans-serif;
+    line-height: 1;
+    content: '*';
+}
+.createTeam-content_form{
+    width: 100%;
+}
+.createTeam-content_key .ant-col-8::after {
+    content: ':';
+    position: relative;
+    top: -.5px;
+    margin: 0 8px 0 2px;
+}
+.createTeam-content_schoolRadio{
+    display: inline-block;
+    width: 1.481481rem;
+}
+.createTeam-content_schoolRadio label{
+    cursor: pointer;
+}
+.createTeam-content_schoolRadio input{
+    cursor: pointer;
+}
+.createTeam-content_untiRadio{
+    width:  1.481481rem;
+    display: inline-block;
+}
+.createTeam-content_key .ant-col-16{
+    text-align: left;
+}
+.createTeam-content_text .ant-col-16{
+    text-align: center;
+}
+.createTeam-content_text .ant-col-16 #phone::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.createTeam-content_text .ant-col-16 #idNumber::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.createTeam-content_protocol{
+    padding: .185185rem 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.createTeam-content_protocol label{
+    cursor: pointer;
+}
+.createTeam-content_protocol input{
+    cursor: pointer;
+}
+.createTeam-content_protocolName{
+    cursor: pointer;
+}
+.createTeam-content_key input{
+    border: .037037rem solid #18bccd;
+    border-radius: .037037rem;
+    width: 60%;
+    color: #18bccd;
+}
+.createTeam-content_key input#school,input#vocationalColleges{
+    width: 20%;
+}
+.createTeam-content_key option{
+    background-color:  #18bccd;
+}
+.createTeam-content_text{
+    border-bottom: .018519rem solid #555;
+    text-align: left;
+}
+.createTeam-content_edit{
+    font-size: .333333rem;
+}
+.createTeam-content_subBotton{
+    background-color: #18bccd;
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent; 
+    outline: none; 
+    margin-right: .37037rem;
+    height: .47037rem;
+    width: 1.481481rem;
+    color: #000;
+}
+.failSubmit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #18bccd;
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent; 
+    outline: none; 
+    /* margin-right: 1.851852rem; */
+    height: .47037rem;
+    width: 1.481481rem;
+    color: #000;
+    border-radius: .037037rem;
+    cursor: pointer;
+}
+.createTeam-content_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: .185185rem;
+}
+.createTeam-content_resBotton{
+    width: 1.481481rem;
+    height: .47037rem;
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent; 
+    outline: none; 
+    color: #18bccd;
+}
+.createTeam-content #register{
+    padding-top: .37037rem;
+}
+
+
+.createTeam-content_schoolLabel::before {
+    display: inline-block;
+    margin-right: 4px;
+    color: #ff4d4f;
+    font-size: 14px;
+    font-family: SimSun, sans-serif;
+    line-height: 1;
+    content: '*';
+}
+.createTeam-content_schoolInput{
+    display: inline-block;
+    margin-bottom: .444444rem;
+    width: 12.62963rem;
+}
+.createTeam-content_schoolInput input{
+    width: 3.333333rem;
+    padding: .074074rem .203704rem;
+}
+.createTeam-content_teacherKey{
+   
+}
+.teacher-infos{
+     display: flex;
+    /* flex-flow: column; */
+    flex-wrap: wrap;
+    border-bottom: .018519rem solid #555;
+}
+.teacher-info{
+    flex: 0 0 20%;
+    padding-top: .185185rem;
+    padding-bottom: .185185rem;
+    text-align: center;
+
+}
+.teacher-info input{
+    border: .037037rem solid #18bccd;
+    border-radius: .037037rem;
+    width: 80%;
+    color: #18bccd;
+}
+.teacher-label::before {
+    display: inline-block;
+    margin-right: 4px;
+    color: #ff4d4f;
+    font-size: 14px;
+    font-family: SimSun, sans-serif;
+    line-height: 1;
+    content: '*';
+}
+.teacherDel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.teacher-del_botton{
+    width: 1.111111rem;
+    height: .462963rem;
+    background-color: #18bccd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .037037rem;
+}
+@media screen and (min-width: 1500px) {
+    .createTeam-content {
+        margin-right: 5.555556rem;
+        margin-left:5.555556rem;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .createTeam-content {
+        margin-right: 1.851852rem;
+        margin-left:1.851852rem;
+    }
+}
+@media screen and (max-width: 900px) {
+    .createTeam-content {
+        margin-right: 1.851852rem;
+        margin-left:1.851852rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .createTeam-content {
+        margin-right:  .740741rem;
+        margin-left: .740741rem;
+    }
+}

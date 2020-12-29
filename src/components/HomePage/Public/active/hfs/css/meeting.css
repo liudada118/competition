@@ -1,0 +1,847 @@
+* {
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: "Microsoft YaHei", Arial, sans-serif, Helvetica, "SimSun";
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+	display: block;
+}
+
+audio, canvas, progress, video {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+[hidden], template {
+	display: none;
+}
+
+a {
+	background-color: transparent;
+	text-decoration: none;
+	outline: none;
+}
+
+a:active, a:hover {
+	outline: none;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+img {
+	border: 0;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+dfn {
+	font-style: italic;
+}
+
+ul {
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: 400
+}
+
+.clearfix:after, .clearfix:before {
+	display: table;
+	content: ""
+}
+
+.clearfix:after {
+	clear: both
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	min-width: 1200px;	
+	background: #091022 url('http://p0.qhimg.com/t01c3d93f43c54bb65a.jpg') no-repeat center 60px;
+}
+
+.pager {
+	width: 1200px;
+	margin: 0 auto;
+	min-height: 100%;
+	position: relative;
+}
+
+header {
+	width: 1200px;
+	margin: 0 auto;
+	background: #000;
+	width: 100%;
+	margin: 0 auto;
+	height: 67px;
+	line-height: 67px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	overflow: hidden;
+	text-align: center;
+}
+
+.top {
+	width: 1200px;
+	height: 67px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.logo {
+	float: left;
+	width: 190px;
+	height: 67px;
+	padding-left: 20px;
+}
+
+.logo img {
+	vertical-align: middle;
+}
+
+/* .top-nav{} */
+.top-nav li {
+	float: left;
+	padding: 0 20px;
+}
+
+.top-nav li a {
+	font-size: 18px;
+	color: #fff;
+	display: inline-block;
+	height: 65px;
+	border-bottom: 2px solid #000;
+}
+
+.top-nav li a:hover, .top-nav li a.cur {
+	color: #2cf5bf;
+	border-color: #2cf5bf;
+}
+
+.banner {
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+	height: 810px;
+	padding-top: 67px;
+	text-align: center;
+}
+
+.banner-txt {
+	height: 100%;
+}
+
+.banner-txt .countdown {
+	position: relative;
+	top: 448px;
+	left: 20px;
+	width: 100%;
+	height: 161px;
+	color: #091022;
+	font-size: 48px;
+	background: url('https://p0.ssl.qhimg.com/t018eb9c8a16b83d246.png') no-repeat center center;
+}
+
+.banner-txt .countdown-txt {
+	position: absolute;
+	top: 74px;
+	width: 73px;
+	height: 64px;
+	line-height: 64px;
+	text-align: center;
+}
+
+.banner-txt .countdown-day-1 {
+	left: 249px;
+}
+
+.banner-txt .countdown-day-2 {
+	left: 336px;
+}
+
+.banner-txt .countdown-hour-1 {
+	left: 497px;
+}
+
+.banner-txt .countdown-hour-2 {
+	left: 584px;
+}
+
+.banner-txt .countdown-minite-1 {
+	left: 744px;
+}
+
+.banner-txt .countdown-minite-2 {
+	left: 831px;
+}
+
+.meeting-ttl {
+	height: 90px;
+	text-align: center;
+	background: url('https://p0.ssl.qhimg.com/t01c6bb2d027717f6fd.png') no-repeat center center;
+}
+
+.meeting-ttl span {
+	font-size: 36px;
+	line-height: 66px;
+	background: linear-gradient(to top, #30dbc1, #37c4da);
+	--webkit-background-clip: text;
+	color: transparent;
+	color: #37c4da;
+	background: none;
+}
+
+.meeting-sttl {
+	height: 50px;
+	background: url('https://p0.ssl.qhimg.com/t019b249095fe230455.png') no-repeat -50px bottom;
+}
+
+.meeting-sttl span {
+	float: left;
+	font-size: 24px;
+	line-height: 40px;
+	padding: 0 0 0 5px;
+	background: linear-gradient(to top, #30dbc1, #37c4da);
+	--webkit-background-clip: text;
+	color: transparent;
+	color: #37c4da;
+	background: none;
+}
+
+/* .meeting-intro-wrap{} */
+.meeting-box {
+	position: relative;
+}
+
+.meeting-anchor {
+	position: absolute;
+	top: -100px;
+	left: -100px;
+}
+
+.meeting-intro {
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 30px;
+	height: 734px;
+}
+
+.meeting-intro .meeting-anchor {
+	top: -70px;
+}
+
+.meeting-intro-con {
+	padding: 30px 90px;
+	height: 396px;
+	background: url('http://p0.qhimg.com/t012442fb15b27ad54e.png') no-repeat center top;
+}
+
+.meeting-intro-con p {
+	padding-top: 12px;
+	text-indent: 2em;
+	font-size: 14.5px;
+	color: #e2d79d;
+	line-height: 32px;
+}
+
+/* .meeting-guest{} */
+.meeting-guest .meeting-ttl {
+	margin-top: -120px;
+}
+
+.meeting-guest-con {
+	padding-top: 50px;
+}
+
+.meeting-guest-con ul {
+	overflow: hidden;
+}
+
+.meeting-guest-con li {
+	float: left;
+	width: 20%;
+}
+
+.meeting-guest-con li .item {
+	text-align: center;
+	padding: 30px 15px 15px;
+}
+
+.meeting-guest-con li .item-img {
+	display: inline-block;
+	width: 171px;
+	height: 171px;
+	border: 2px solid #2cf5bf;
+	padding: 8px;
+	--moz-border-radius: 50%;
+	--webkit-border-radius: 50%;
+	--o-border-radius: 50%;
+	--ms-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.meeting-guest-con li .item-img-in {
+	width: 152px;
+	height: 152px;
+	line-height: 152px;
+	-moz-border-radius: 50%;
+	border: 0px solid #091022;
+	background: #091022;
+	overflow: hidden;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.meeting-guest-con li .item-img-in img {
+	width: 100%;
+	min-width: 100%;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.meeting-guest-con li .item-name {
+	font-size: 18px;
+	line-height: 50px;
+	color: #e2d79d;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 0 20px;
+}
+
+.meeting-guest-con li .item-intro {
+	font-size: 15px;
+	color: #fff;
+	overflow: hidden;
+	line-height: 28px;
+	height: 56px;
+	padding: 0 20px;
+}
+
+/* .meeting-schdule{} */
+.meeting-schdule .meeting-ttl {
+	margin: 80px 0 50px;
+}
+
+.meeting-schdule-main {
+	height: 1647px;
+	overflow: hidden;
+	background: linear-gradient(to right, #12a18b, #1487b3);
+	background: '#1487b3';
+	border: 1px solid #091022;
+	--moz-border-radius: 3px;
+	--webkit-border-radius: 3px;
+	--o-border-radius: 3px;
+	--ms-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.meeting-schdule-branch {
+	margin-top: 70px;
+	height: 1119px;
+}
+
+.meeting-schdule-branch .poster-item {
+	background: #1c2d40;
+	border: 1px solid #1c2d40;
+	--moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+	filter: alpha(opacity=40);
+	-moz-opacity: 0.4;
+	-khtml-opacity: 0.4;
+	opacity: 0.4;
+	behavior: url(ie-css3.htc);
+}
+
+.meeting-schdule-branch .cur {
+	background: #1c2d40;
+	border: 1px solid #1c2d40;
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0px 0px 40px #000;
+	-moz-box-shadow: 0px 0px 40px #000;
+	-o-box-shadow: 0px 0px 40px #000;
+	-ms-box-shadow: 0px 0px 40px #000;
+	box-shadow: 0px 0px 40px #000;
+	behavior: url(ie-css3.htc);
+}
+
+.meeting-schdule-branch .poster-main .poster-prev-btn, .meeting-schdule-branch .poster-main .poster-next-btn {
+	background: none;
+}
+
+/* .meeting-highlights{} */
+.meeting-highlights .meeting-ttl {
+	margin: 80px 0 50px;
+}
+
+.meeting-highlights-con {
+	position: relative;
+	height: 1050px;
+	padding-top: 460px;
+	background: url('https://p0.ssl.qhimg.com/t010dfdd78ed6b2cee9.png') no-repeat -43px 60px;
+}
+
+.meeting-highlights .meeting-highlights-name {
+	height: 40px;
+}
+
+.meeting-highlights-ttl {
+	font-size: 36px;
+	line-height: 66px;
+	text-align: center;
+	background: linear-gradient(to top, #30dbc1, #37c4da);        /* -webkit-background-clip: text; */
+	color: transparent;
+	color: #37c4da\0;
+	background: none\0;
+	height: 90px;
+}
+
+.meeting-highlights-name {
+	position: relative;
+	top: -245px;
+	left: 0;
+}
+
+.meeting-highlights-name span {
+	position: absolute;
+	width: 120px;
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+	top: 0;
+	left: 0;
+}
+
+span.meeting-highlights-name-1 {
+	left: 18px;
+}
+
+span.meeting-highlights-name-2 {
+	left: 227px;
+}
+
+span.meeting-highlights-name-3 {
+	left: 435px;
+}
+
+span.meeting-highlights-name-4 {
+	left: 642px;
+}
+
+span.meeting-highlights-name-5 {
+	left: 851px;
+}
+
+span.meeting-highlights-name-6 {
+	left: 1060px;
+}
+
+.meeting-highlights-review {
+	height: 500px;
+}
+
+.meeting-highlights-review .poster-item {
+	background: #1c2d40;
+	border: 1px solid #1c2d40;
+	-moz-border-radius: 3px;
+	--webkit-border-radius: 3px;
+	--o-border-radius: 3px;
+	--ms-border-radius: 3px;
+	border-radius: 3px;
+	--webkit-box-shadow: 0px 0px 20px #000;
+	--moz-box-shadow: 0px 0px 20px #000;
+	--o-box-shadow: 0px 0px 20px #000;
+	-moz-background-inline-policy: 0px 0px 20px #000;
+	box-shadow: 0px 0px 20px #000;
+	behavior: url(ie-css3.htc);
+}
+
+.meeting-highlights-review .poster-item img {
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+}
+
+.meeting-highlights-review .poster-main .poster-prev-btn, .meeting-highlights-review .poster-main .poster-next-btn {
+	background: none;
+}
+
+.meeting-partner {
+	background: url('https://p0.ssl.qhimg.com/t01bec9a0c5811252a3.png') no-repeat right 380px;
+}
+
+.meeting-partner .meeting-ttl {
+	margin: 80px 0 50px;
+}
+
+.meeting-partner p {
+	text-align: left;
+	font-size: 18px;
+	color: #fff;
+	line-height: 42px;
+	padding: 20px 0 50px;
+}
+
+.meeting-partner p a {
+	color: #fff;
+}
+
+.meeting-partner p a:hover {
+	color: #fff;
+	cursor: default;
+}
+
+.meeting-partner ul {
+	overflow: hidden;
+	padding: 20px 0 50px;
+}
+
+.meeting-partner li {
+	width: 20%;
+	float: left;
+}
+
+.meeting-partner li a {
+	text-align: center;
+	margin: 10px 0;
+	height: 70px;
+	line-height: 70px;
+	overflow: hidden;
+	width: 220px;
+	display: block;
+	background: #fff;
+}
+
+.meeting-partner img {
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.meeting-partner .meeting-support li a {
+	height: 210px;
+	line-height: 210px;
+}
+
+.meeting-guide-wrap {
+	background: url('https://p0.ssl.qhimg.com/t014272160907329dbb.png') no-repeat 0 0;
+}
+
+.meeting-guide {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.meeting-guide .meeting-ttl {
+	margin: 80px 0 50px;
+}
+
+.meeting-guide-con {
+	height: 800px;
+}
+
+.meeting-guide-map {
+	width: 872px;
+	height: 391px;
+	margin: 0 auto;
+	background: #1c2d40;
+}
+
+.meeting-guide-else {
+	padding: 50px 0 20px;
+}
+
+.meeting-guide-else ul {
+	overflow: hidden;
+}
+
+.meeting-guide-else li {
+	float: left;
+	width: 33.33%;
+}
+
+.meeting-guide-else-ttl {
+	text-align: center;
+	color: #fff;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.meeting-guide-else li div {
+	padding: 0 20px;
+}
+
+.meeting-guide-else li .meeting-guide-else-con {
+	height: 180px;
+}
+
+.meeting-guide-else-con p {
+	color: #fff;
+	font-size: 14px;
+	line-height: 30px;
+}
+
+.meeting-guide-else-oper {
+	text-align: center;
+	height: 70px;
+	line-height: 70px;
+}
+
+.meeting-guide-else-oper .btn {
+	padding: 8px 30px;
+	background: #1c2d40;
+	color: #fff;
+	font-size: 24px;
+}
+
+.meeting-guide-else-oper .btn:hover {
+	background: #273f59;
+}
+
+.meeting-toTop {
+	display: none;
+	cursor: pointer;
+	box-sizing: content-box;
+	z-index: 999;
+	text-align: center;
+	position: fixed;
+	right: 20px;
+	top: 400px;
+	width: 50px;
+	height: 133px;
+	padding-top: 28px;
+	background: url('https://p0.ssl.qhimg.com/t01d4bffcbea5a690d5.png') no-repeat center center;
+}
+
+.meeting-toTop a {
+	display: inline-block;
+	width: 20px;
+	color: #fff;
+	font-size: 14px;
+}
+
+.meeting-toTop a:hover {
+	color: #25c59e;
+}
+
+footer {
+	height: 360px;
+	background: #010718;
+}
+
+.ft-nav {
+	width: 1200px;
+	padding: 60px 30px 90px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.ft-box {
+	float: left;
+	width: 33.33%;
+	color: #fff;
+}
+
+.ft-box h3 {
+	font-size: 2.4rem;
+	height: 50px;
+	line-height: 50px;
+}
+
+.ft-box a {
+	font-size: 1.6rem;
+	line-height: 32px;
+	color: #fff;
+	cursor: default;
+}
+
+.ft-box a:hover {
+	color: #fff;
+}
+
+.ft-box li {
+	overflow: hidden;
+}
+
+.ft-copyright p {
+	font-size: 1.4rem;
+	color: #fff;
+	text-align: center;
+	line-height: 24px;
+}
+
+.ft-copyright a {
+	color: #fff;
+	padding: 0 10px;
+}
+
+.meeting-video {
+	padding-bottom: 50px;
+	background: url(https://p0.ssl.qhimg.com/t0122d6e0dfcdd36f56.png) no-repeat center bottom;
+}
+
+.meeting-video .coloumn-2-1 {
+	width: 45%;
+}
+
+.meeting-video .coloumn-2-2 {
+	margin-left: 45%;
+}
+
+.meeting-video-ttl {
+	background: url(https://p0.ssl.qhimg.com/t01b55a5e3a35bd2ff3.png) no-repeat center center;
+}
+
+.meeting-video-ttl span {
+	font-size: 30px;
+	line-height: 90px;
+}
+
+.meeting-video-con {
+}
+
+.meeting-video-left {
+	padding: 30px 0 30px 20px;
+	margin-right: 15px;
+	height: 360px;
+	border: 1px solid #285c77;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+.meeting-video-left p {
+	line-height: 35px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.meeting-video-left a {
+	color: #fff;
+	font-size: 16px;
+	padding-left: 20px;
+	background: url(https://p0.ssl.qhimg.com/t01b69650dadadd599e.png) no-repeat 0 center;
+}
+
+.meeting-video-left::-webkit-scrollbar {
+	
+	/*滚动条整体样式*/
+	width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+	height: 1px;
+}
+
+.meeting-video-left::-webkit-scrollbar-thumb {
+	
+	/*滚动条里面小方块*/
+	--webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+	background: #0c253f;
+}
+
+.meeting-video-left::-webkit-scrollbar-track {
+	
+	/*滚动条里面轨道*/
+	--webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+	background: #285c77;
+}
+
+.meeting-video-right .tabs {
+	overflow: hidden;
+}
+
+.meeting-video-right .tabs-tag {
+	float: right;
+	width: 140px;
+	height: 100%;
+}
+
+.meeting-video-right .tabs-tag li {
+	width: 116px;
+	height: 116px;
+	background: #10537f;
+	padding: 1px;
+	margin-bottom: 5px;
+}
+
+.meeting-video-right .tabs-tag li a {
+	line-height: 100px;
+	font-size: 14px;
+	color: #fff;
+	display: block;
+	height: 100%;
+	width: 100%;
+	background: #041a2b;
+	border-bottom: none;
+	text-align: center;
+}
+
+.meeting-video-right .tabs-tag li a:hover {
+	color: #6ae7f0;
+}
+
+.meeting-video-right .tabs-tag li.cur {
+	width: 115px;
+	height: 115px;
+	background: #32a9f8;
+	padding: 2px;
+}
+
+.meeting-video-right .tabs-tag li.cur a {
+	color: #6ae7f0;
+}
+
+.meeting-video-right .tabs-con {
+	overflow: hidden;
+	background: #071023;
+	height: 360px;
+	width: 520px;
+	float: left;
+	border: 3px solid #000;
+	border-image: -webkit-linear-gradient(to right, #49295e, #000000) 20 20;
+	border-image: -moz-linear-gradient(to right, #49295e, #000000) 20 20;
+	border-image: -o-linear-gradient(to right, #49295e, #000000) 20 20;
+	border-image: linear-gradient(to right, #49295e, #000000) 20 20;
+}

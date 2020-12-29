@@ -1,0 +1,51 @@
+.ant-col-red {
+    color: #fff;
+}
+.person-content_member .ant-col{
+    text-align: center;
+}
+.person-content_null{
+    font-size: .555556rem;
+    color: rgba(255, 255, 255, 0.2);
+}
+.person-content_null a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .555556rem;
+}
+.person-content_null a:hover{
+    color: rgba(255, 255, 255, 0.8);
+}
+.person-content_member .ant-col{
+    text-align: center;
+    overflow-wrap: normal;
+}
+.person-content_edit{
+
+}
+.ant-col-red{
+    width: 1.481481rem;
+    height: .555556rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .092593rem;
+    cursor: pointer;
+}
+.ant-col-red div{
+    background-color: red;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    .teacher-info{
+		flex: 0 0 50%;
+	}
+	.member-info{
+		flex: 0 0 50%;
+	}
+}

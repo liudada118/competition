@@ -1,0 +1,206 @@
+.createTeam-content{
+    border: .018519rem solid #18bccd;
+    background-color: rgba(20, 48, 61, 0.7);
+    color: #fff;
+}
+.createTeam{
+    /* width: 100vw; */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.createTeam-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.createTeam-bg img{
+    width: 100%;
+    height: 100%;
+}
+.createTeam-content{    
+    width: 100%;
+    margin-right: 3.703704rem;
+    margin-left:3.703704rem;
+    position: relative;
+    display: flex;
+    /* margin-top: 16rem; */
+    flex-flow: column;
+}
+.createTeam-content_title{
+    display: inline-block;
+    font-size: .37037rem;
+    
+}
+.createTeam-content label{
+    color: #fff;
+}
+.createTeam-content_title h2{
+    color: #fff;
+}
+.createTeam-content_edit{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+.createTeam-content_key{
+    text-align: center;
+    padding-top: .277778rem;
+    padding-bottom: .277778rem;
+    font-size: .296296rem;
+}
+.createTeam-content_key .ant-col-8{
+    text-align: right;
+}
+.createTeam-content_key .ant-col-8::before {
+    display: inline-block;
+    margin-right: 4px;
+    color: #ff4d4f;
+    font-size: 14px;
+    font-family: SimSun, sans-serif;
+    line-height: 1;
+    content: '*';
+}
+.createTeam-content_key .ant-col-8::after {
+    content: ':';
+    position: relative;
+    top: -.5px;
+    margin: 0 8px 0 2px;
+}
+.createTeam-content_schoolRadio{
+    display: inline-block;
+    width: 1.481481rem;
+}
+.createTeam-content_untiRadio{
+    width:  1.481481rem;
+    display: inline-block;
+}
+.createTeam-content_key .ant-col-16{
+    text-align: left;
+}
+.createTeam-content_text .ant-col-16{
+    text-align: center;
+}
+.createTeam-content_text .ant-col-16 #phone::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.createTeam-content_text .ant-col-16 #idNumber::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.createTeam-content_protocol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.createTeam-content_key input{
+    border: .037037rem solid #18bccd;
+    border-radius: .037037rem;
+    width: 60%;
+    color: #18bccd;
+}
+.createTeam-content_key input#school,input#unit{
+    width: 20%;
+}
+.createTeam-content_key option{
+    background-color:  #18bccd;
+}
+.createTeam-content_text{
+    border-bottom: .018519rem solid #555;
+}
+.createTeam-content_edit{
+    font-size: .333333rem;
+}
+.createTeam-content_subBotton{
+    background-color: #18bccd;
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent; 
+    outline: none; 
+    margin-right: .37037rem;
+    height: .47037rem;
+    width: 1.481481rem;
+    color: #000;
+}
+.failSubmit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #18bccd;
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent; 
+    outline: none; 
+    margin-right: .37037rem;
+    height: .47037rem;
+    width: 1.481481rem;
+    color: #000;
+}
+.createTeam-content_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.createTeam-content_resBotton{
+    width: 1.481481rem;
+    height: .47037rem;
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent; 
+    outline: none; 
+    color: #18bccd;
+}
+.createTeam-content #register{
+    padding-top: .37037rem;
+}
+
+
+.createTeam-content_schoolLabel::before {
+    display: inline-block;
+    margin-right: 4px;
+    color: #ff4d4f;
+    font-size: 14px;
+    font-family: SimSun, sans-serif;
+    line-height: 1;
+    content: '*';
+}
+.createTeam-content_schoolInput{
+    display: inline-block;
+    margin-bottom: .444444rem;
+    width: 12.62963rem;
+}
+.createTeam-content_schoolInput input{
+    width: 3.333333rem;
+    padding: .074074rem .203704rem;
+}
+.createTeam-content_schoolInput{
+
+}
+@media screen and (min-width: 1500px) {
+    .createTeam-content {
+        margin-right: 5.555556rem;
+        margin-left:5.555556rem;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .createTeam-content {
+        margin-right: 1.851852rem;
+        margin-left:1.851852rem;
+    }
+}
+@media screen and (max-width: 900px) {
+    .createTeam-content {
+        margin-right: 1.851852rem;
+        margin-left:1.851852rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .createTeam-content {
+        margin-right:  .740741rem;
+        margin-left: .740741rem;
+    }
+}

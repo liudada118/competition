@@ -1,0 +1,57 @@
+.sign{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: rgba(0 , 0 , 0 , 0.4);
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+.sign-content{
+    z-index: 333;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sign-content h3{
+    font-size: .444444rem;
+    color: #18bccd;
+    padding-bottom: .555556rem;
+}
+.sign-button{
+    align-items: center;
+    display: flex;
+}
+.sign-button div{
+    /* display: inline-block; */
+    border-radius: .037037rem;
+    background-color: #18bccd;
+    width: 1.111111rem;
+    height: .555556rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.sign-pass{
+    margin-right: .185185rem; 
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.sign-content_info{
+    width: 30%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    border-radius: .074074rem;
+    border: .018519rem solid #18bccd;
+    background-color: rgba(0 , 0 , 0 , 0.6);
+}
+.sign-content_info p{
+    color: red;
+    font-size: .333333rem;
+}
